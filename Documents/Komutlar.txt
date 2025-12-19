@@ -1,5 +1,92 @@
+
+java oroje dizinini veren kod
 tree /f > project_structure.txt
 
+maven testlerini çalıştırır
 mvn clean compile
 
+Allure Reports veren kod
 allure serve target/allure-results
+
+ortam değişkenlerini veren kod:
+set
+
+// todo --
+
+# 1. NORMAL (Hızlı, veriler korunur, son kaldığın yerden)
+emulator -avd Pixel_7_Pro
+
+# 2. ANA EKRAN (Yavaş, veriler korunur, her zaman ana ekrandan)
+emulator -avd Pixel_7_Pro -no-snapshot
+
+# 3. TEMİZ ANA EKRAN (Alternatif)
+emulator -avd Pixel_7_Pro -no-snapshot-load
+
+# 4. FABRİKA AYARLARI (Tam temiz, tüm veriler silinir)
+emulator -avd Pixel_7_Pro -wipe-data
+
+# 5. EN TEMİZ (Hem fabrika hem snapshot temizliği)
+emulator -avd Pixel_7_Pro -wipe-data -no-snapshot
+
+// todo
+# Hızlı aç (günlük kullanım)
+emulator -avd Pixel_7_Pro
+
+# Cold boot yap ama verileri koru (snapshot bozulduysa)
+emulator -avd Pixel_7_Pro -no-snapshot
+
+# Tam temiz kurulum (test için)
+emulator -avd Pixel_7_Pro -wipe-data
+
+# Hem cold boot hem temiz (en garantili)
+emulator -avd Pixel_7_Pro -no-snapshot -wipe-data
+
+
+//<!--
+emulator -avd Pixel_7_Pro -no-snapshot
+✅ Ne yapar:
+
+Snapshot'tan başlatmaz (cold boot)
+
+Kullanıcı verileri, uygulamalar, ayarlar korunur
+
+Ana ekrandan başlar (çünkü önceki oturum state'i yüklenmez)
+
+Boot süresi uzun (~30 saniye+)
+
+//<!-- =======================
+emulator -avd Pixel_7_Pro -no-snapshot-load
+
+✅ Ne yapar:
+
+Snapshot yüklemez (ana ekrandan başlar)
+
+Ama kapanırken kaydedebilir (isteğe bağlı)
+
+Veriler korunur
+
+Tercih edilen yöntem (daha esnek)
+
+//<!-- =======================
+emulator -avd Pixel_7_Pro -no-snapshot-load -no-snapshot-save -no-snapshot
+✅ Ne yapar:
+
+Snapshot ne yüklenir ne kaydedilir
+
+Her açılışta cold boot + ana ekran
+
+Veriler korunur (çünkü -wipe-data yok)
+
+
+//<!--=========================
+adb shell am force-stop com.android.launcher3  # Launcher'ı yeniden başlat
+adb shell input keyevent KEYCODE_HOME          # Ana ekran tuşu
+
+adb shell am force-stop com.android.launcher3
+adb shell input keyevent KEYCODE_HOME
+
+
+
+
+
+

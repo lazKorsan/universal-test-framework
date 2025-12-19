@@ -1,0 +1,65 @@
+PS C:\Users\user> emulator -list-avds
+Locater
+Pixel_4
+Pixel_4_2
+Pixel_7_Pro
+Pixel_7_Pro_2
+Pixel_9_Pro
+Pixel_Tablet
+
+C:\Users\user>set
+ALLURE_HOME=C:\Users\user\scoop\apps\allure\current
+ALLUSERSPROFILE=C:\ProgramData
+ANDROID_HOME=C:\Users\user\AppData\Local\android\Sdk
+APPDATA=C:\Users\user\AppData\Roaming
+ChocolateyInstall=C:\ProgramData\chocolatey
+ChocolateyLastPathUpdate=134081598463800467
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=HP
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DriverData=C:\Windows\System32\Drivers\DriverData
+EFC_2636_1592913036=1
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOMEDRIVE=C:
+HOMEPATH=\Users\user
+IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAlxuS4H27ZUO2bZE0ITnw3gQAAAACAAAAAAAQZgAAAAEAACAAAABFicoRx246SlW9aRLe4XKqb/JSvlBy5kPf2PyhGLgIyQAAAAAOgAAAAAIAACAAAAByCA2TCJj8V7Evx/mv38bP1d+7bj7vZlqUfGeyxXnLAGAAAABQtvBlRUIhpLnzn1TfecSIEqxOI1vH/D9ITeauVyQEu6v/nuZ7hSjhphAaF/LIWWaZUZ/r8cG85pbH95bIrdOsOj3o9WBpdFJIs9fMKRJNdEq4ueb0uWA2rp/5VsrcEA9AAAAA2wD+JxxBeRCspAGvP+rNQKOitO69A1ZStUDek2mvkRyY5SuFqghHAVPXIioy82/WB+rtm95MFZjLyv3jJrA1Aw==
+JAVA_HOME=C:\Program Files\Java\jdk-17
+LEVEL_ZERO_V1_SDK_PATH=C:\Program Files\LevelZeroSDK\1.24.0\
+LOCALAPPDATA=C:\Users\user\AppData\Local
+LOGONSERVER=\\HP
+NUMBER_OF_PROCESSORS=12
+OneDrive=C:\Users\user\OneDrive
+OneDriveConsumer=C:\Users\user\OneDrive
+OS=Windows_NT
+Path=C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17;C:\Users\user\AppData\Local\android\Sdk;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\user\AppData\Local\Android\Sdk\tools;C:\Users\user\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Users\user\AppData\Local\android\Sdk\emulator;;C:\Users\user\scoop\shims;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Users\user\AppData\Local\Microsoft\WinGet\Packages\DenoLand.Deno_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\user\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121583-g4348bde2d2-win64-gpl/bin;C:\Users\user\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.yt-dlp_Microsoft.Winget.Source_8wekyb3d8bbwe;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=9a03
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PROMPT=$P$G
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\user\AppData\Local\Temp
+TMP=C:\Users\user\AppData\Local\Temp
+USERDOMAIN=HP
+USERDOMAIN_ROAMINGPROFILE=HP
+USERNAME=user
+USERPROFILE=C:\Users\user
+windir=C:\WINDOWS
+ZES_ENABLE_SYSMAN=1
+
+
+PS C:\Users\user> adb devices
+List of devices attached
+emulator-5554   device

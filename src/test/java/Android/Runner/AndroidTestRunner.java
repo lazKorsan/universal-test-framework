@@ -21,7 +21,7 @@ import org.testng.annotations.DataProvider;
         },
         monochrome = true,                // Konsol çıktısını siyah-beyaz yapar
         dryRun = false,                   // true yaparsan sadece step'leri kontrol eder, test çalıştırmaz
-        tags = "@New"                 // Sadece @android tag'ine sahip testleri çalıştır
+        tags = "@EnviermentMader"                 // Sadece @android tag'ine sahip testleri çalıştır
 )
 public class AndroidTestRunner extends AbstractTestNGCucumberTests {
 
