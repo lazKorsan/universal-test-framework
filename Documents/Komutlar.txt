@@ -1,3 +1,5 @@
 tree /f > project_structure.txt
 
 mvn clean compile
+
+allure serve target/allure-results

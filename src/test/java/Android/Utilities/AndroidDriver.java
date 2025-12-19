@@ -4,7 +4,6 @@ import com.student.ConfigManager;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.Paths;
 import java.time.Duration;
 
 public class AndroidDriver {
@@ -23,7 +22,7 @@ public class AndroidDriver {
 
         // APK yolunu dinamik olarak oluştur
         String appPath = config.get("android.app.path");
-        if (appPath.contains("${user.dir}")) {
+        if (appPath != null && appPath.contains("${user.dir}")) {
             appPath = appPath.replace("${user.dir}", System.getProperty("user.dir"));
         }
 
@@ -33,6 +32,7 @@ public class AndroidDriver {
                 .setPlatformVersion(config.get("android.platform.version"))
                 .setAutomationName(config.get("automationName", "UiAutomator2"))
                 .setApp(appPath)
+                .autoGrantPermissions() // Bildirim izinlerini otomatik olarak verir
                 .setNoReset(false) // Uygulama verilerini her testten önce temizle
                 .setFullReset(false); // Uygulamayı her testten önce yeniden yükle
 
@@ -44,7 +44,13 @@ public class AndroidDriver {
         }
 
         io.appium.java_client.android.AndroidDriver driver = new io.appium.java_client.android.AndroidDriver(url, options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(config.getImplicitTimeout()));
+        long implicitTimeout = 10; // Varsayılan değer
+        try {
+            implicitTimeout = Long.parseLong(config.get("implicit.timeout"));
+        } catch (NumberFormatException e) {
+            System.err.println("implicit.timeout değeri geçersiz, varsayılan (10 saniye) kullanılıyor.");
+        }
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitTimeout));
         return driver;
     }
 
