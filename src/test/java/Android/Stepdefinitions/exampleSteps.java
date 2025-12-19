@@ -1,10 +1,11 @@
 package Android.Stepdefinitions;
 
 import Android.Pages.QueryCardPage;
-import io.cucumber.java.en.Given;
+import io.cucumber.java.en.*;
 
-import static Android.DailyJunke.AppiumServerController.startServer;
-import static Android.DailyJunke.EmulatorController.startEmulator;
+import java.io.IOException;
+
+
 
 public class exampleSteps {
 
@@ -19,10 +20,10 @@ public class exampleSteps {
 
 
     @Given("User opner appiumServer and Emulator and app")
-    public void userOpnerAppiumServerAndEmulatorAndApp() {
+    public void userOpnerAppiumServerAndEmulatorAndApp()  {
 
 
-        page.userOpenTheAppiumServerAndEmulatorAndApp();
+
 
     }
 }

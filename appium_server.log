@@ -1,0 +1,63 @@
+[38;5;112m[Appium][0m Welcome to Appium v3.1.2
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { allowInsecure: [ [32m'adb_shell'[39m ] }
+Fatal Error: The full feature name must include both the destination automation name or the '*' wildcard to apply the feature to all installed drivers, and the feature name split by a colon. Got 'adb_shell' instead
+    at validator (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:94:13)
+    at Array.map (<anonymous>)
+    at validateFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:105:19)
+    at AppiumDriver.configureGlobalFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:24:26)
+    at main (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\main.js:379:16)
+[38;5;112m[Appium][0m Welcome to Appium v3.1.2
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { allowInsecure: [ [32m'adb_shell'[39m ] }
+Fatal Error: The full feature name must include both the destination automation name or the '*' wildcard to apply the feature to all installed drivers, and the feature name split by a colon. Got 'adb_shell' instead
+    at validator (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:94:13)
+    at Array.map (<anonymous>)
+    at validateFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:105:19)
+    at AppiumDriver.configureGlobalFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:24:26)
+    at main (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\main.js:379:16)
+[38;5;112m[Appium][0m Welcome to Appium v3.1.2
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { allowInsecure: [ [32m'adb_shell'[39m ] }
+Fatal Error: The full feature name must include both the destination automation name or the '*' wildcard to apply the feature to all installed drivers, and the feature name split by a colon. Got 'adb_shell' instead
+    at validator (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:94:13)
+    at Array.map (<anonymous>)
+    at validateFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:105:19)
+    at AppiumDriver.configureGlobalFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:24:26)
+    at main (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\main.js:379:16)
+[38;5;112m[Appium][0m Welcome to Appium v3.1.2
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { allowInsecure: [ [32m'adb_shell'[39m ] }
+Fatal Error: The full feature name must include both the destination automation name or the '*' wildcard to apply the feature to all installed drivers, and the feature name split by a colon. Got 'adb_shell' instead
+    at validator (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:94:13)
+    at Array.map (<anonymous>)
+    at validateFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:105:19)
+    at AppiumDriver.configureGlobalFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:24:26)
+    at main (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\main.js:379:16)
+[38;5;112m[Appium][0m Welcome to Appium v3.1.2
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { allowInsecure: [ [32m'adb_shell'[39m ] }
+Fatal Error: The full feature name must include both the destination automation name or the '*' wildcard to apply the feature to all installed drivers, and the feature name split by a colon. Got 'adb_shell' instead
+    at validator (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:94:13)
+    at Array.map (<anonymous>)
+    at validateFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:105:19)
+    at AppiumDriver.configureGlobalFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:24:26)
+    at main (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\main.js:379:16)
+[38;5;112m[Appium][0m Welcome to Appium v3.1.2
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { allowInsecure: [ [32m'adb_shell'[39m ] }
+Fatal Error: The full feature name must include both the destination automation name or the '*' wildcard to apply the feature to all installed drivers, and the feature name split by a colon. Got 'adb_shell' instead
+    at validator (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:94:13)
+    at Array.map (<anonymous>)
+    at validateFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:105:19)
+    at AppiumDriver.configureGlobalFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:24:26)
+    at main (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\main.js:379:16)
+[38;5;112m[Appium][0m Welcome to Appium v3.1.2
+[38;5;112m[Appium][0m Non-default server args:
+[38;5;112m[Appium][0m { allowInsecure: [ [32m'adb_shell'[39m ] }
+Fatal Error: The full feature name must include both the destination automation name or the '*' wildcard to apply the feature to all installed drivers, and the feature name split by a colon. Got 'adb_shell' instead
+    at validator (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:94:13)
+    at Array.map (<anonymous>)
+    at validateFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:105:19)
+    at AppiumDriver.configureGlobalFeatures (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\insecure-features.ts:24:26)
+    at main (C:\Users\user\AppData\Roaming\npm\node_modules\appium\lib\main.js:379:16)

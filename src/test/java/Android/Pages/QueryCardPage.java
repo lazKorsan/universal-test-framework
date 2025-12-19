@@ -17,8 +17,7 @@ import org.testng.Assert;
 import java.time.Duration;
 import java.util.List;
 
-import static Android.DailyJunke.AppiumServerController.startServer;
-import static Android.DailyJunke.EmulatorController.startEmulator;
+
 import static org.junit.Assert.assertTrue;
 
 public class QueryCardPage {
@@ -45,12 +44,9 @@ public class QueryCardPage {
         System.out.println("   -> Cihaz Bilgileri: " + driver.getCapabilities().getCapability("deviceName"));
     }
 
-    public void userOpenTheAppiumServerAndEmulatorAndApp() {
 
-        startEmulator();
-        startServer();
 
-    }
+
 
     @AndroidFindBy(xpath = "(//android.widget.ImageView[1])[1]")
     private WebElement queryCardLogoElement;
