@@ -1,11 +1,14 @@
-Feature: Arkadaslar ilk senaryoyu mutlaka calistirin. Bu bizim ortam degiskenlerini ayarlamamıza fayda saglayacak
+Feature:
     @New
     Scenario: Kullanici uygulamayi acar
       Given user open the QueryCar applications
 
-      @EnviermentMader
+  @EnviermentMader
     Scenario:
       Given User opner appiumServer and Emulator and app
+
+
+
 
 
 

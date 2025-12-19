@@ -1,15 +1,20 @@
 package Android.Stepdefinitions;
 
 import Android.Pages.QueryCardPage;
+import Android.TestNg.MethodsPage;
+import Android.Utilities.AppiumServerController;
+import Android.Utilities.RunTimeEmulatorStarter;
 import io.cucumber.java.en.*;
-
-import java.io.IOException;
-
 
 
 public class exampleSteps {
 
-    QueryCardPage page = new QueryCardPage(Android.Utilities.AndroidDriver.getDriver());
+    MethodsPage optionMet = new MethodsPage();
+    AppiumServerController serverer = new AppiumServerController();
+    RunTimeEmulatorStarter emulator = new RunTimeEmulatorStarter();
+    QueryCardPage page = new QueryCardPage(null);
+
+
 
     @Given("user open the QueryCar applications")
     public void user_open_the_query_car_applications() {
@@ -22,7 +27,10 @@ public class exampleSteps {
     @Given("User opner appiumServer and Emulator and app")
     public void userOpnerAppiumServerAndEmulatorAndApp()  {
 
+       // AppiumServerController.startServer();
+        //RunTimeEmulatorStarter.startEmulator("pixel_7_pro");
 
+      optionMet.methodKolCalismasiWithTestNG();
 
 
     }
