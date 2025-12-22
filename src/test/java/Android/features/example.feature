@@ -7,6 +7,10 @@ Feature:
     Scenario:
       Given User opner appiumServer and Emulator and app
 
+    @zzzx
+    Scenario:
+      Given XXXX
+
 
 
 

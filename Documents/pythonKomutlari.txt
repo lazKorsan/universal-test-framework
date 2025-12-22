@@ -1,0 +1,3 @@
+
+belirtilen dosyayı çalıştırır
+python python/browser/gogole.py
