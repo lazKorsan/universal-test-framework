@@ -1,7 +1,6 @@
 package Api.Utilities;
 
 import config_Requirements.ConfigLoader;
-import hooks.HooksAPI;
 import io.cucumber.datatable.DataTable;
 import io.restassured.RestAssured;
 import io.restassured.builder.ResponseBuilder;

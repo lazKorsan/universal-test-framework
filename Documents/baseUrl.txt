@@ -1,0 +1,5 @@
+base_url = https://qa.instulearn.com
+email = ahmet@instulearn.com
+password = Instu2025!
+adminToken =
+x-api-key = 1234

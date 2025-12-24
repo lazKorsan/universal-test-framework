@@ -1,0 +1,6 @@
+# Python Kutuphane Listesi
+# Terminalden yuklemek icin: pip install -r python/requirements.txt
+
+requests
+selenium
+webdriver-manager

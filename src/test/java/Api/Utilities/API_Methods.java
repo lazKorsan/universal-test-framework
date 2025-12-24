@@ -8,7 +8,7 @@ import org.junit.Assert;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import static hooks.HooksAPI.spec;
+import static Api.Utilities.HooksAPI.spec;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -158,7 +158,7 @@ public class API_Methods {
     }
 
     // body dogrulama
-    public static void assertBody(String path, String value) {
+    public static void assertBody(String path, Object value) {
         response.then()
                 .assertThat()
                 .body(path, equalTo(value));

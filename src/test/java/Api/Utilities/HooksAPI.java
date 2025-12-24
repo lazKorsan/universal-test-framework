@@ -1,12 +1,12 @@
-package hooks;
+package Api.Utilities;
 
-import Api.Utilities.Authentication;
 import config_Requirements.ConfigLoader;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
-import Api.Utilities.Authentication;
 
 public class HooksAPI {
+
+
     public static RequestSpecification spec;
     static ConfigLoader configLoader = new ConfigLoader();
 
@@ -20,10 +20,10 @@ public class HooksAPI {
 
         spec = new RequestSpecBuilder()
                 .setBaseUri(configLoader.getApiConfig("base_url"))
+                .setRelaxedHTTPSValidation()
                 .addHeader("Accept", "application/json")
                 .addHeader("x-api-key", "1234")
                 .addHeader("Authorization", "Bearer " + token)
                 .build();
     }
 }
-
