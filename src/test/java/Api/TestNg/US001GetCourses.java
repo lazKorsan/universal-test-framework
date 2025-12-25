@@ -24,7 +24,7 @@ public class US001GetCourses {
     public static final String TOKEN = "15707|XCnyE8Ov4ZyvaMbZIbMfzOpRUbiyA1eUVPyUhXOB";
 
     @Test
-    public void GetCourses_TC01() {
+    public  void GetCourses_TC01() {
 
         // USOO1
         // admin(true) id(null)

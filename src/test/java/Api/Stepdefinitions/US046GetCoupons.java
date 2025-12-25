@@ -1,19 +1,17 @@
 package Api.Stepdefinitions;
 
+import Api.TestNg.CoursesMethod;
+import io.cucumber.java.en.Given;
 import org.testng.annotations.Test;
 
 public class US046GetCoupons {
 
 
-    @Test
-    public void getSorgusu(){
+    @Given("ASD")
+    public void asd() {
 
-        // {{base_url}}/api/coupon/189
-        // base_url = https://qa.instulearn.com
-        //email = ahmet@instulearn.com
-        //password = Instu2025!
-        //adminToken =
-        //x-api-key = 1234
+        CoursesMethod.GetCourses_TC01();
+    }
 
 
 
@@ -22,4 +20,4 @@ public class US046GetCoupons {
     }
 
 
-}
+

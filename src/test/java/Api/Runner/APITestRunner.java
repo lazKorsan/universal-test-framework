@@ -21,7 +21,7 @@ import org.testng.annotations.DataProvider;
         },
         monochrome = true,
         dryRun = false,
-        tags = "@api"                     // Sadece @api tag'li testler
+        tags = "@ssd"                     // Sadece @api tag'li testler
 )
 public class APITestRunner extends AbstractTestNGCucumberTests {
 
