@@ -16,88 +16,67 @@ public class API_Methods {
     public static String fullPath;
     public static Response response;
     public static int id;
-
     public static HashMap<String, Object> responseMap;
+    private static PathParamValidator validator;
 
-    // endpoint olusturma
-    public static void pathParam(String rawPaths) {//
-        // Eğer içinde sayı yoksa → sabit endpoint → pathParam yapma
+    // ==================== PATH PARAM METHODS ====================
+
+    public static void pathParam(String rawPaths) {
         if (!rawPaths.matches(".*\\d+.*")) {
             fullPath = "/" + rawPaths;
             System.out.println("[STATIC ENDPOINT] fullPath = " + fullPath);
             return;
-        }//   api/categories
+        }
 
-        String[] paths = rawPaths.split("/");  //  [api, categories]
+        String[] paths = rawPaths.split("/");
+        System.out.println("Path segments: " + Arrays.toString(paths));
 
-        System.out.println(Arrays.toString(paths));  //  [api, categories]
-
-        StringBuilder tempPath = new StringBuilder("/{");  // "/{pp0}/{pp1}" daha sonra oluşturulacak URL path şablonunu hazırla
-
+        StringBuilder tempPath = new StringBuilder("/{");
 
         for (int i = 0; i < paths.length; i++) {
+            String key = "pp" + i;
+            String value = paths[i].trim();
 
-            String key = "pp" + i;  // pp1
-            String value = paths[i].trim();  // categories
-
-            spec.pathParam(key, value);   //   spec.pathParam("pp0", "api");   spec.pathParam("pp1", "categories");
-
+            spec.pathParam(key, value);
             tempPath.append(key + "}/{");
 
-            if (value.matches("\\d+")) {  // value.matches("\\d+") burada value rakam iceriyorsa dedik
+            if (value.matches("\\d+")) {
                 id = Integer.parseInt(value);
             }
         }
-        tempPath.deleteCharAt(tempPath.lastIndexOf("/"));// fazlaliklari siliyoruz
+
+        tempPath.deleteCharAt(tempPath.lastIndexOf("/"));
         tempPath.deleteCharAt(tempPath.lastIndexOf("{"));
 
         fullPath = tempPath.toString();
-        System.out.println("fullPath = " + fullPath); // Örnek fullPath = /{pp0}/{pp1}
-        System.out.println("id : " + id);
+        System.out.println("fullPath = " + fullPath);
+        System.out.println("Extracted ID: " + id);
+
+        // Validator'e path parametrelerini ekle
+        initValidator();
+        validator.extractParamsFromPath(rawPaths);
     }
 
+    // ==================== REQUEST METHODS ====================
 
-    // request gönderme
     public static Response sendRequest(String httpMethod, Object requestBody) {
+        response = null;
 
         switch (httpMethod.toUpperCase()) {
             case "GET":
-                if (requestBody != null) {
-                    response = given()
-                            .spec(spec)
-                            .contentType(ContentType.JSON)
-                            .when()
-                            .body(requestBody)
-                            .get(fullPath);
-                } else {
-                    response = given()
-                            .spec(spec)
-                            .when()
-                            .get(fullPath);
-                }
+                response = buildRequest(requestBody).get(fullPath);
                 break;
             case "POST":
-                response = given()
-                        .spec(spec)
-                        .contentType(ContentType.JSON)
-                        .when()
-                        .body(requestBody)
-                        .post(fullPath);
+                response = buildRequest(requestBody).post(fullPath);
                 break;
             case "PATCH":
-                response = given()
-                        .spec(spec)
-                        .contentType(ContentType.JSON)
-                        .when()
-                        .body(requestBody)
-                        .patch(fullPath);
+                response = buildRequest(requestBody).patch(fullPath);
                 break;
             case "DELETE":
-                response = given()
-                        .spec(spec)
-                        .when()
-                        .delete(fullPath);
+                response = buildRequest(requestBody).delete(fullPath);
                 break;
+            default:
+                throw new IllegalArgumentException("Unsupported HTTP method: " + httpMethod);
         }
 
         if (response != null) {
@@ -107,73 +86,167 @@ public class API_Methods {
         return response;
     }
 
+    private static io.restassured.specification.RequestSpecification buildRequest(Object requestBody) {
+        io.restassured.specification.RequestSpecification request = given().spec(spec);
 
-    // exception yakalama
+        if (requestBody != null) {
+            request.contentType(ContentType.JSON).body(requestBody);
+        }
+
+        return request;
+    }
+
+    // ==================== EXCEPTION HANDLING ====================
+
     public static String tryCatchRequest(String httpMethod, Object requestBody) {
-        String exceptionMesaj = null;
+        String exceptionMessage = null;
         try {
             switch (httpMethod.toUpperCase()) {
                 case "GET":
-                    if (requestBody != null) {
-                        response = given()
-                                .spec(spec)
-                                .contentType(ContentType.JSON)
-                                .when()
-                                .body(requestBody)
-                                .get(fullPath);
-                    } else {
-                        response = given()
-                                .spec(spec)
-                                .when()
-                                .get(fullPath);
-                    }
-                    break;
                 case "DELETE":
-                    response = given()
-                            .spec(spec)
-                            .when()
-                            .delete(fullPath);
-                    break;
                 case "PATCH":
-                    response = given()
-                            .spec(spec)
-                            .contentType(ContentType.JSON)
-                            .when()
-                            .body(requestBody)
-                            .patch(fullPath);
+                    sendRequest(httpMethod, requestBody);
                     break;
+                default:
+                    throw new IllegalArgumentException("Method not supported in tryCatch: " + httpMethod);
             }
         } catch (Exception e) {
-            exceptionMesaj = e.getMessage();
+            exceptionMessage = e.getMessage();
         }
-        System.out.println("Exception Mesaj : " + exceptionMesaj);
-        return exceptionMesaj;
+        System.out.println("Exception Message: " + exceptionMessage);
+        return exceptionMessage;
     }
 
-    // status code dogrulama
+    // ==================== VALIDATION METHODS ====================
+
     public static void statusCodeAssert(int statusCode) {
-        response.then()
-                .assertThat()
-                .statusCode(statusCode);
+        response.then().assertThat().statusCode(statusCode);
     }
 
-    // body dogrulama
     public static void assertBody(String path, Object value) {
-        response.then()
-                .assertThat()
-                .body(path, equalTo(value));
+        response.then().assertThat().body(path, equalTo(value));
     }
 
-    // path param dogrulama
-    public static void assertPathParam(String responseId) {
+    // ==================== PATH PARAM VALIDATION METHODS ====================
+
+    // Validator initialization
+    private static void initValidator() {
+        if (validator == null) {
+            validator = new PathParamValidator();
+        }
+    }
+
+    public static void setupValidator(Response response) {
+        initValidator();
+        validator.setResponse(response);
+    }
+
+    public static void setupValidator() {
+        initValidator();
+        if (response != null) {
+            validator.setResponse(response);
+        }
+    }
+
+    // Manual param management
+    public static void addPathParam(String key, Object value) {
+        initValidator();
+        validator.addParam(key, value);
+    }
+
+    public static Object getPathParam(String key) {
+        checkValidator();
+        return validator.getParam(key);
+    }
+
+    // Validation methods using validator
+    public static void assertPathParam(String jsonPath, String paramKey) {
+        checkValidatorAndResponse();
+        validator.validate(jsonPath, paramKey);
+    }
+
+    public static void assertPathParam(String jsonPath) {
+        checkValidatorAndResponse();
+        validator.validate(jsonPath);
+    }
+
+    public static void assertPathParam(String jsonPath, Object expectedValue) {
+        checkValidatorAndResponse();
+        validator.validate(jsonPath, expectedValue);
+    }
+
+    // Specialized validation methods
+    public static void assertDeletedId() {
+        checkValidatorAndResponse();
+        validator.validateDeletedId();
+    }
+
+    public static void assertCreatedId() {
+        checkValidatorAndResponse();
+        validator.validateCreatedId();
+    }
+
+    public static void assertUpdatedId() {
+        checkValidatorAndResponse();
+        validator.validateUpdatedId();
+    }
+
+    // Legacy method (for backward compatibility)
+    public static void assertDeletedIdLegacy() {
+        JsonPath jsonPath = response.jsonPath();
+        String deletedId = jsonPath.getString("['Deleted Course ID']");
+
+        System.out.println("Deleted Course ID in response: " + deletedId);
+        System.out.println("Expected ID from path param: " + id);
+
+        Assert.assertEquals("Deleted ID doesn't match!",
+                String.valueOf(id), deletedId);
+    }
+
+    public static void assertPathParamLegacy(String jsonKey, Object expectedValue) {
         JsonPath jsonPath = response.jsonPath();
 
-        // Boşluk veya özel karakter varsa ['key'] şeklinde al
-        int updatedId = jsonPath.getInt("['" + responseId + "']");
+        String jsonPathExpr = jsonKey.contains(" ") || jsonKey.contains("-") || jsonKey.contains(".")
+                ? "['" + jsonKey + "']"
+                : jsonKey;
 
-        System.out.println("Updated ID in response: " + updatedId);
+        Object actualValue = jsonPath.get(jsonPathExpr);
+
+        System.out.println("Response value (" + jsonKey + "): " + actualValue);
+        System.out.println("Expected value: " + expectedValue);
+
+        Assert.assertEquals(jsonKey + " value doesn't match!",
+                String.valueOf(expectedValue), String.valueOf(actualValue));
+    }
+
+    // Private helper methods
+    private static void checkValidator() {
+        if (validator == null) {
+            throw new IllegalStateException("Validator not initialized! Call setupValidator() first.");
+        }
+    }
+
+    private static void checkValidatorAndResponse() {
+        checkValidator();
+        if (response == null) {
+            throw new IllegalStateException("Response is null! Send a request first.");
+        }
+        if (validator.getParam("id") == null && id == 0) {
+            System.out.println("⚠️ Warning: No ID found in path params or extracted ID.");
+        }
+    }
+
+    // API_Methods.java'ya ekle:
+    public static void assertDeletedCourseId() {
+        JsonPath jsonPath = response.jsonPath();
+
+        // Doğrudan JsonPath ile al (boşluklu key için ['key'] syntax)
+        String deletedId = jsonPath.getString("['Deleted Course ID']");
+
+        System.out.println("Deleted Course ID in response: " + deletedId);
         System.out.println("Expected ID: " + id);
 
-        Assert.assertEquals("Response ID ile path param ID eşleşmiyor!", id, updatedId);
+        Assert.assertEquals("Deleted Course ID doesn't match!",
+                String.valueOf(id), deletedId);
     }
 }

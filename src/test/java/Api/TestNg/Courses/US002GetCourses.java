@@ -1,4 +1,4 @@
-package Api.TestNg;
+package Api.TestNg.Courses;
 
 import Api.Utilities.API_Methods;
 import Api.Utilities.HooksAPI;

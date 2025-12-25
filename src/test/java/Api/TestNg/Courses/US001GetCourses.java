@@ -1,9 +1,7 @@
-package Api.TestNg;
+package Api.TestNg.Courses;
 
 import Api.Utilities.API_Methods;
 import Api.Utilities.HooksAPI;
-import io.cucumber.java.en.Given;
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.json.JSONObject;

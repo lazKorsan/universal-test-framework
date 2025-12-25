@@ -1,7 +1,8 @@
-package Api.TestNg;
+package Api.TestNg.Courses;
 
 import Api.Utilities.API_Methods;
 import Api.Utilities.HooksAPI;
+import org.testng.annotations.Test;
 
 public class CoursesMethod {
 
@@ -29,5 +30,9 @@ public class CoursesMethod {
         // api_kullanicisi_response_body_deki_bilgisinin_oldugunu_dogrular : path = remark  value = success
         API_Methods.assertBody("remark", "success");
 
+    }
+    @Test
+    public static void GetCourses_TC02() {
+        GetCourses_TC01();
     }
 }

@@ -1,8 +1,7 @@
 package Api.Stepdefinitions;
 
-import Api.TestNg.CoursesMethod;
+import Api.TestNg.Courses.CoursesMethod;
 import io.cucumber.java.en.Given;
-import org.testng.annotations.Test;
 
 public class US046GetCoupons {
 
