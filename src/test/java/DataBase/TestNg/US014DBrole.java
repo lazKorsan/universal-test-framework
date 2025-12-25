@@ -19,6 +19,8 @@ public class US014DBrole extends TestNgBase {
     public void TC014() {
         // Bağlantı @BeforeMethod (TestNgBase içinde) sayesinde zaten açık!
 
+        //<!-- == todo become_instructors tablosuna teacher ve organization dısında baska bir rol ile veri eklenemediğini dogrulayın
+
         // --- Rolleri Konsola Yazdırma ---
         System.out.println("=== " + tableName + " Tablosundaki Mevcut Roller ===");
         String listQuery = "SELECT " + role + " FROM " + tableName;
@@ -49,7 +51,15 @@ public class US014DBrole extends TestNgBase {
 
         // Başarılı doğrulama mesajı
         System.out.println("\"become_instructors\" tablosusunun \"role\" sutununda \"teacher\" ve \"organization\" rolleri dışında bir şey olmadigi dogrulandi");
-        
+
         // Bağlantı @AfterMethod (TestNgBase içinde) sayesinde otomatik kapanacak!
+    }
+
+    @Test
+    public  void role() {
+        // Bağlantı @BeforeMethod (TestNgBase içinde) sayesinde zaten açık!
+      TC014();
+
+
     }
 }

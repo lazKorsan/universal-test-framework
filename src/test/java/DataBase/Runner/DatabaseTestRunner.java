@@ -21,7 +21,7 @@ import org.testng.annotations.DataProvider;
         },
         monochrome = true,
         dryRun = false,
-        tags = "@database"               // Sadece database testleri
+        tags = "@DBrole"               // Sadece database testleri
 )
 public class DatabaseTestRunner extends AbstractTestNGCucumberTests {
 
