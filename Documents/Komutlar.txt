@@ -87,6 +87,14 @@ adb shell input keyevent KEYCODE_HOME
 
 
 
+python için connector yukleme komutu
+
+pip install mysql-connector-python
+
+
+
+
+
 
 
 
