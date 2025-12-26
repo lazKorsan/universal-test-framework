@@ -1,1 +1,21 @@
 
+şu sınıf içinde ki test normal çalışıyor
+C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Android\TestNg\FirstAndroidTest.java
+
+bu test sınıfını
+
+C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Android\Pages\MethodsPage.java
+
+içinde olduğu gibi method olarak tanımladım
+
+sonrada şurada kullanmak istedim .
+
+C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Android\TestNg\US001LoginPhone.java
+
+  @Test
+    public void US001_LoginWithPhoneNumber() {
+        Android.Pages.MethodsPage.loginWithPhoneNumber();
+    }
+
+
+testin başında sıkıntı yok fakat  phone numarası girleecği zaman hata oluşuyor

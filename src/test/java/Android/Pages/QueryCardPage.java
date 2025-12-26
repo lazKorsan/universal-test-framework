@@ -31,6 +31,18 @@ public class QueryCardPage {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(15)), this);
     }
+    //@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(0)")
+    //public WebElement phoneTextBox;
+
+    @FindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[1]")
+    public WebElement phoneTextBox2;
+
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[1]")
+    public WebElement phoneTextBox3;
+
+
+
+
 
     public void kullaniciQueryCartUygulamasiniAcar() {
         String appPackage = "com.wise.querycart";
@@ -90,7 +102,7 @@ public class QueryCardPage {
     private WebElement signInLoginButton;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(0)")
-    private WebElement phoneTextBox;
+    public WebElement phoneTextBox;
 
     @AndroidFindBy(accessibility = "See All")
     private WebElement seeAllIconElement;
