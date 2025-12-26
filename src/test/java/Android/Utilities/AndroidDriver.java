@@ -46,9 +46,9 @@ public class AndroidDriver {
         io.appium.java_client.android.AndroidDriver driver = new io.appium.java_client.android.AndroidDriver(url, options);
         long implicitTimeout = 10; // Varsayılan değer
         try {
-            implicitTimeout = Long.parseLong(config.get("implicit.timeout"));
+            implicitTimeout = Long.parseLong(config.get("timeout.implicit"));
         } catch (NumberFormatException e) {
-            System.err.println("implicit.timeout değeri geçersiz, varsayılan (10 saniye) kullanılıyor.");
+            System.err.println("timeout.implicit değeri geçersiz, varsayılan (10 saniye) kullanılıyor.");
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitTimeout));
         return driver;

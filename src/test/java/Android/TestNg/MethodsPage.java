@@ -5,13 +5,16 @@ import Android.Utilities.AppiumServerController;
 import Android.Utilities.ReusableMethods;
 import Android.Utilities.RunTimeEmulatorStarter;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class MethodsPage {
 
-    private QueryCardPage queryCardPage;
+
     private io.appium.java_client.android.AndroidDriver driver;
+
+
 
 
     @Test

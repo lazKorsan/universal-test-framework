@@ -24,8 +24,8 @@ public class PageClassOpenEmulator {
        System.out.println("📱 Emülatör başlatılıyor...");
        RunTimeEmulatorStarter.startEmulator("pixel_7_pro");
 
-       System.out.println("⏳ Boot bekleniyor (45 saniye)...");
-       ReusableMethods.wait(45);
+       System.out.println("⏳ Boot bekleniyor (12 saniye)...");
+       ReusableMethods.bekle(12);
 
        System.out.println("🔧 AndroidDriver başlatılıyor...");
 
@@ -36,7 +36,7 @@ public class PageClassOpenEmulator {
        System.out.println("✅ Driver başlatıldı:");
        System.out.println("   Session ID: " + this.driver.getSessionId());
 
-       ReusableMethods.wait(4);
+       ReusableMethods.bekle(4);
 
        // Test
        this.driver.findElement(AppiumBy.accessibilityId("Profile")).click();
