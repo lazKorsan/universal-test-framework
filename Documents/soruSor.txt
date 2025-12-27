@@ -1,21 +1,34 @@
 
-şu sınıf içinde ki test normal çalışıyor
-C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Android\TestNg\FirstAndroidTest.java
 
-bu test sınıfını
-
-C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Android\Pages\MethodsPage.java
-
-içinde olduğu gibi method olarak tanımladım
-
-sonrada şurada kullanmak istedim .
-
-C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Android\TestNg\US001LoginPhone.java
-
-  @Test
-    public void US001_LoginWithPhoneNumber() {
-        Android.Pages.MethodsPage.loginWithPhoneNumber();
-    }
+ WebElement stateButton= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"State\")"));
+        stateButton.click();
+        ReusableMethods.bekle(2);
 
 
-testin başında sıkıntı yok fakat  phone numarası girleecği zaman hata oluşuyor
+
+        WebElement cityButton= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"State\")"));
+        cityButton.click();
+        ReusableMethods.bekle(2);
+
+
+
+        WebElement zipCodeBox= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"State\")"));
+        zipCodeBox.click();
+        ReusableMethods.bekle(2);
+
+
+        WebElement streetAdress= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\").instance(4)"));
+        streetAdress.click();
+        ReusableMethods.bekle(2);
+
+
+
+          actions.sendKeys(Keys.TAB).perform();
+                actions.sendKeys(Keys.ENTER).perform();
+                System.out.println(2);
+                ReusableMethods.bekle(2);
+
+                actions.sendKeys(Keys.TAB).perform();
+                actions.sendKeys(Keys.ENTER).perform();
+                ReusableMethods.bekle(2);
+                System.out.println(3);
