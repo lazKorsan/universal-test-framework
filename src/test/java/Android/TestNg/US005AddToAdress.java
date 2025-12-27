@@ -20,20 +20,20 @@ public class US005AddToAdress {
 
         io.appium.java_client.android.AndroidDriver driver = AndroidDriver.getDriver();
         Assert.assertNotNull(driver, "AndroidDriver başlatılamadı!");
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
         methodsPage.loginWithPhoneNumber();
 
         //<!-- todo dynamic method için gerekli
 
         methodsPage.profileButton.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
         methodsPage.AddressButton.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
         methodsPage.addNewAddressButton.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
         Actions actions = new Actions(driver);
         String fakeMail = "lazKorsan"+System.currentTimeMillis()+"@gmail.com";
@@ -43,9 +43,9 @@ public class US005AddToAdress {
 
         methodsPage.fullNameBox.click();
         methodsPage.fullNameBox.sendKeys("lazKorsan");
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
         actions.sendKeys(Keys.TAB).perform();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
         actions.sendKeys(mail).perform();
         ReusableMethods.bekle(2);
         actions.sendKeys(Keys.TAB).perform();
@@ -54,21 +54,21 @@ public class US005AddToAdress {
         WebElement fakePhoneNumberBox = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\").instance(2)"));
         fakePhoneNumberBox.click();
         fakePhoneNumberBox.sendKeys(fakePhoneNumber);
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
 
         WebElement countryButton= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"Country\")"));
         countryButton.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
 
         WebElement countryBox = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\")"));
         countryBox.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
         //<!-- == todo country enter
         actions.sendKeys("Denmark").perform();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
         actions.sendKeys(Keys.TAB).perform();
         actions.sendKeys(Keys.ENTER).perform();
         ReusableMethods.bekle(2);
@@ -76,39 +76,46 @@ public class US005AddToAdress {
         //<!-- == todo state enter
         WebElement stateButton= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"State\")"));
         stateButton.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
         actions.sendKeys(Keys.TAB).perform();
         actions.sendKeys(Keys.ENTER).perform();
 
         //<!-- == todo city enter
         WebElement cityButton= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"City\")"));
         cityButton.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
         actions.sendKeys(Keys.TAB).perform();
         actions.sendKeys(Keys.ENTER).perform();
 
         //<!-- == todo zip code enter
         WebElement zipCodeBox= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\").instance(3)"));
         zipCodeBox.click();
-        ReusableMethods.bekle(1);
+        ReusableMethods.bekle(2);
         zipCodeBox.sendKeys("12345");
         ReusableMethods.hideKeyboard();
-        ReusableMethods.bekle(1);
-        ReusableMethods.hideKeyboard();
+        //ReusableMethods.bekle(2);
 
 
         //<!-- == todo street address enter
         WebElement streetAdress= driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.EditText\").instance(4)"));
 
         streetAdress.click();
+        driver.setClipboardText("Test Street 12");
+        streetAdress.sendKeys(driver.getClipboardText());
+
         ReusableMethods.hideKeyboard();
-        ReusableMethods.bekle(2);
-        streetAdress.sendKeys("12");
-        ReusableMethods.hideKeyboard();
+        //ReusableMethods.bekle(2);
 
         WebElement addAddressButton = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"Add Address\")"));
         addAddressButton.click();
-        ReusableMethods.bekle(2);
+        //ReusableMethods.bekle(2);
 
+
+
+    }
+
+    @Test
+    public void addAddress(){
+        methodsPage.addToAddress();
     }
 }
