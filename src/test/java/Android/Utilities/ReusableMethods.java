@@ -147,4 +147,33 @@ public class ReusableMethods {
     private static AndroidDriver getDriver() {
         return Android.Utilities.AndroidDriver.getDriver();
     }
+
+    public static void clickButtonByDescription(String description) {
+        AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
+        WebElement button = driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiSelector().description(\"" + description + "\")"));
+        button.click();
+    }
+
+    public static void scrollWithUiScrollableContentDesc(String elementText) {
+
+        AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
+        driver.findElement(
+                AppiumBy.androidUIAutomator(
+                        "new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().description(\"" + elementText + "\"));"
+                )
+        );
+    }
+
+    public static void xPathElementClick(String itemName, String reviews, String price) {
+        // Inspector'ın verdiği element genellikle tüm bilgiyi içeren View'dır.
+        // Bu yüzden direkt o View'ı hedefliyoruz.
+        String xpathExpression = String.format("//android.view.View[contains(@content-desc, '%s') and contains(@content-desc, '%s') and contains(@content-desc, '%s')]", itemName, reviews, price);
+
+        AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
+        WebElement element = driver.findElement(AppiumBy.xpath(xpathExpression));
+        element.click();
+    }
+
+
 }
