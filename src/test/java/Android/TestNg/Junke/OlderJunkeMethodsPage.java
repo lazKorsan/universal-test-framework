@@ -1,15 +1,13 @@
-package Android.TestNg;
+package Android.TestNg.Junke;
 
-import Android.Pages.QueryCardPage;
 import Android.Utilities.AppiumServerController;
 import Android.Utilities.ReusableMethods;
 import Android.Utilities.RunTimeEmulatorStarter;
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MethodsPage {
+public class OlderJunkeMethodsPage {
 
 
     private io.appium.java_client.android.AndroidDriver driver;
@@ -44,18 +42,5 @@ public class MethodsPage {
         this.driver.findElement(AppiumBy.accessibilityId("Profile")).click();
 
         System.out.println("🎉 Uygulama başarıyla açıldı!");
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
 }

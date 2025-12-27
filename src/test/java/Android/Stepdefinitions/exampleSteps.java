@@ -1,8 +1,7 @@
 package Android.Stepdefinitions;
 
-import Android.DailyJunke.DailyJungelTest;
 import Android.Pages.QueryCardPage;
-import Android.TestNg.MethodsPage;
+import Android.TestNg.Junke.OlderJunkeMethodsPage;
 import Android.Utilities.AppiumServerController;
 import Android.Utilities.RunTimeEmulatorStarter;
 import io.appium.java_client.android.AndroidDriver;
@@ -11,7 +10,7 @@ import io.cucumber.java.en.*;
 
 public class exampleSteps {
 
-    MethodsPage optionMet = new MethodsPage();
+    OlderJunkeMethodsPage optionMet = new OlderJunkeMethodsPage();
     AppiumServerController serverer = new AppiumServerController();
     RunTimeEmulatorStarter emulator = new RunTimeEmulatorStarter();
     QueryCardPage page = new QueryCardPage(null);
