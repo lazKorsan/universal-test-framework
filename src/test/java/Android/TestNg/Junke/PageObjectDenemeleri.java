@@ -1,11 +1,11 @@
-package Android.TestNg;
+package Android.TestNg.Junke;
 
 
 import org.testng.annotations.Test;
 
 public class PageObjectDenemeleri {
 
-    MethodsPage optionMet = new MethodsPage();
+    OlderJunkeMethodsPage optionMet = new OlderJunkeMethodsPage();
 
 
 

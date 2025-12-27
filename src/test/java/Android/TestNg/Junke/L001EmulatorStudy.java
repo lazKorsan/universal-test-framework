@@ -1,4 +1,4 @@
-package Android.TestNg;
+package Android.TestNg.Junke;
 
 import Android.Utilities.AndroidDriver;
 import Android.Utilities.AppiumServerController;

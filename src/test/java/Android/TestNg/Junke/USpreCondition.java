@@ -1,7 +1,5 @@
-package Android.TestNg;
+package Android.TestNg.Junke;
 
-import Android.Utilities.AndroidTrigger;
-import com.student.BaseTest;
 import io.appium.java_client.AppiumBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
