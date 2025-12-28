@@ -53,6 +53,25 @@ public class MethodsPage {
 
 
 
+    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView")
+    public WebElement shoppingCartButton;
+
+    @AndroidFindBy(xpath = "//android.view.View[@resource-id=\"root\"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.EditText")
+    public WebElement cartNumberField;
+
+    @AndroidFindBy(xpath = "//android.view.View[@resource-id=\"root\"]/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1]")
+    public WebElement dateField;
+
+
+    @AndroidFindBy(xpath = "//android.view.View[@resource-id=\"root\"]/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[2]")
+    public WebElement cvcfield;
+
+
+    @AndroidFindBy(xpath = "//android.view.View[@resource-id=\"root\"]/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[3]")
+    public WebElement zipField;
+
+
+
 
     // Metod static OLMAMALI
     public void loginWithPhoneNumber() {

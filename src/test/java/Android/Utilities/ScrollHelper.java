@@ -1,4 +1,4 @@
-package utilities;
+package Android.Utilities;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.*;
@@ -9,18 +9,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class ScrollHelper {
 
     private AppiumDriver driver;
     private WebDriverWait wait;
 
-    public ScrollHelper(AppiumDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    // Constructor
+    public ScrollHelper() {
+        this.driver = AndroidDriver.getDriver();
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
-    // ⭐⭐⭐ ANA KAYDIRMA METODU (GÜNCEL) ⭐⭐⭐
+    public ScrollHelper(AppiumDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    }
+
+    // ⭐⭐⭐ ANA KAYDIRMA METODU (INSTANCE) ⭐⭐⭐
     public void swipeUp() {
         Dimension size = driver.manage().window().getSize();
 
@@ -36,13 +43,10 @@ public class ScrollHelper {
         swipe.addAction(finger.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(), startX, endY));
         swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
 
-        driver.perform(Arrays.asList(swipe));
-
-        // Kaydırma sonrası kısa bekle
+        driver.perform(Collections.singletonList(swipe));
         waitMillis(300);
     }
 
-    // ⭐⭐⭐ AŞAĞI KAYDIR ⭐⭐⭐
     public void swipeDown() {
         Dimension size = driver.manage().window().getSize();
 
@@ -58,11 +62,11 @@ public class ScrollHelper {
         swipe.addAction(finger.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(), startX, endY));
         swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
 
-        driver.perform(Arrays.asList(swipe));
+        driver.perform(Collections.singletonList(swipe));
         waitMillis(300);
     }
 
-    // ⭐⭐⭐ KAYDIR VE TIKLA ⭐⭐⭐
+    // ⭐⭐⭐ KAYDIR VE TIKLA (INSTANCE) ⭐⭐⭐
     public void scrollAndClick(By locator, int maxSwipes) {
         boolean found = false;
         int swipeCount = 0;
@@ -72,71 +76,66 @@ public class ScrollHelper {
                 WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
                 element.click();
                 found = true;
-                System.out.println("✅ Element bulundu ve tıklandı: " + locator);
                 return;
-            } catch (TimeoutException e) {
-                System.out.println("↕️  Kaydırma " + (swipeCount + 1) + "/" + maxSwipes);
+            } catch (TimeoutException | NoSuchElementException e) {
                 swipeUp();
                 swipeCount++;
-                waitMillis(500);
             } catch (Exception e) {
-                System.out.println("⚠️  Hata: " + e.getMessage());
                 swipeUp();
                 swipeCount++;
-                waitMillis(500);
             }
         }
 
         if (!found) {
-            throw new NoSuchElementException("❌ Element bulunamadı: " + locator);
+            throw new NoSuchElementException("❌ Element bulunamadı (Max swipe: " + maxSwipes + "): " + locator);
         }
     }
 
-    // ⭐⭐⭐ SENİN İÇİN ÖZEL METODLAR ⭐⭐⭐
+    // ⭐⭐⭐ STATIC WRAPPER METODLAR (KOLAY KULLANIM İÇİN) ⭐⭐⭐
 
     // 1. ImageView content-desc ile
-    public void scrollAndClickImageView(String description) {
+    public static void scrollAndClickImageView(String description) {
         By locator = By.xpath("//android.widget.ImageView[@content-desc=\"" + description + "\"]");
-        scrollAndClick(locator, 15);
+        new ScrollHelper().scrollAndClick(locator, 15);
     }
 
     // 2. scrollAndClickByDescription - HERHANGİ BİR ELEMENT İÇİN
-    public void scrollAndClickByDescription(String description) {
+    public static void scrollAndClickByDescription(String description) {
         By locator = By.xpath("//*[@content-desc=\"" + description + "\"]");
-        scrollAndClick(locator, 15);
+        new ScrollHelper().scrollAndClick(locator, 15);
     }
 
     // 3. Text ile
-    public void scrollAndClickByText(String text) {
+    public static void scrollAndClickByText(String text) {
         By locator = By.xpath("//*[@text=\"" + text + "\"]");
-        scrollAndClick(locator, 15);
+        new ScrollHelper().scrollAndClick(locator, 15);
     }
 
     // 4. Resource-id ile
-    public void scrollAndClickById(String resourceId) {
+    public static void scrollAndClickById(String resourceId) {
         By locator = By.id(resourceId);
-        scrollAndClick(locator, 15);
+        new ScrollHelper().scrollAndClick(locator, 15);
     }
 
     // 5. Class name ile
-    public void scrollAndClickByClassName(String className, int index) {
+    public static void scrollAndClickByClassName(String className, int index) {
         By locator = By.xpath("(//" + className + ")[" + index + "]");
-        scrollAndClick(locator, 15);
+        new ScrollHelper().scrollAndClick(locator, 15);
     }
 
-    // 6. Contains text ile (kısmi eşleşme)
-    public void scrollAndClickByContainsText(String partialText) {
+    // 6. Contains text ile
+    public static void scrollAndClickByContainsText(String partialText) {
         By locator = By.xpath("//*[contains(@text, '" + partialText + "')]");
-        scrollAndClick(locator, 15);
+        new ScrollHelper().scrollAndClick(locator, 15);
     }
 
-    // 7. Contains description ile (kısmi eşleşme)
-    public void scrollAndClickByContainsDescription(String partialDesc) {
+    // 7. Contains description ile
+    public static void scrollAndClickByContainsDescription(String partialDesc) {
         By locator = By.xpath("//*[contains(@content-desc, '" + partialDesc + "')]");
-        scrollAndClick(locator, 15);
+        new ScrollHelper().scrollAndClick(locator, 15);
     }
 
-    // ⭐⭐⭐ TAP (TIKLAMA) METODU ⭐⭐⭐
+    // ⭐⭐⭐ TAP (TIKLAMA) METODU (INSTANCE) ⭐⭐⭐
     public void tapAtPoint(int x, int y) {
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
         Sequence tap = new Sequence(finger, 0);
@@ -145,11 +144,9 @@ public class ScrollHelper {
         tap.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
         tap.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
 
-        driver.perform(Arrays.asList(tap));
+        driver.perform(Collections.singletonList(tap));
         waitMillis(200);
     }
-
-    // ⭐⭐⭐ YARDIMCI METODLAR ⭐⭐⭐
 
     private void waitMillis(int millis) {
         try {
@@ -159,56 +156,53 @@ public class ScrollHelper {
         }
     }
 
-    // ⭐⭐⭐ SMART CLICK METODLARI ⭐⭐⭐
+    // ⭐⭐⭐ SMART CLICK METODLARI (STATIC) ⭐⭐⭐
 
     public static void smartClick(String identifier, IdentifierType type) {
-        ScrollHelper scrollHelper = new ScrollHelper(Driver.getAppiumDriver());
-
         switch (type) {
             case DESCRIPTION:
-                scrollHelper.scrollAndClickByDescription(identifier);
+                scrollAndClickByDescription(identifier);
                 break;
             case TEXT:
-                scrollHelper.scrollAndClickByText(identifier);
+                scrollAndClickByText(identifier);
                 break;
             case IMAGE_VIEW_DESC:
-                scrollHelper.scrollAndClickImageView(identifier);
+                scrollAndClickImageView(identifier);
                 break;
             case XPATH:
-                scrollHelper.scrollAndClick(By.xpath(identifier), 10);
+                new ScrollHelper().scrollAndClick(By.xpath(identifier), 10);
                 break;
             case ID:
-                scrollHelper.scrollAndClick(By.id(identifier), 10);
+                scrollAndClickById(identifier);
                 break;
             default:
                 throw new IllegalArgumentException("Geçersiz IdentifierType: " + type);
         }
     }
 
-    // ⭐⭐⭐ SMART CLICK - OVERLOADED VERSİYONLAR ⭐⭐⭐
-
     public static void smartClick(String identifier) {
-        // Otomatik tür algıla
-        if (identifier.startsWith("//")) {
+        if (identifier.startsWith("//") || identifier.startsWith("(")) {
             smartClick(identifier, IdentifierType.XPATH);
         } else if (identifier.startsWith("com.") && identifier.contains(":id/")) {
             smartClick(identifier, IdentifierType.ID);
         } else {
-            // Önce description ile dene, sonra text ile
             try {
                 smartClick(identifier, IdentifierType.DESCRIPTION);
             } catch (Exception e) {
-                smartClick(identifier, IdentifierType.TEXT);
+                try {
+                    smartClick(identifier, IdentifierType.TEXT);
+                } catch (Exception ex) {
+                    throw new NoSuchElementException("Element ne description ne de text ile bulunamadı: " + identifier);
+                }
             }
         }
     }
 
-    // ⭐⭐⭐ ELEMENT GÖRÜNENE KADAR KAYDIR (TIKLAMA YOK) ⭐⭐⭐
+    // ⭐⭐⭐ ELEMENT GÖRÜNENE KADAR KAYDIR (INSTANCE) ⭐⭐⭐
     public void scrollToElement(By locator, int maxSwipes) {
         for (int i = 0; i < maxSwipes; i++) {
             try {
                 if (driver.findElement(locator).isDisplayed()) {
-                    System.out.println("✅ Element görünür oldu");
                     return;
                 }
             } catch (Exception e) {
@@ -216,35 +210,20 @@ public class ScrollHelper {
                 waitMillis(500);
             }
         }
-        throw new NoSuchElementException("Element görünür hale getirilemedi");
+        throw new NoSuchElementException("Element görünür hale getirilemedi: " + locator);
     }
 
-    public void scrollToElementByDescription(String description) {
+    // Static Wrappers for ScrollToElement
+    public static void scrollToElementByDescription(String description) {
         By locator = By.xpath("//*[@content-desc=\"" + description + "\"]");
-        scrollToElement(locator, 15);
+        new ScrollHelper().scrollToElement(locator, 15);
     }
 
-    public void scrollToElementByText(String text) {
+    public static void scrollToElementByText(String text) {
         By locator = By.xpath("//*[@text=\"" + text + "\"]");
-        scrollToElement(locator, 15);
+        new ScrollHelper().scrollToElement(locator, 15);
     }
 
-    // ⭐⭐⭐ SAYFA SONUNA/AŞAĞIYA KAYDIR ⭐⭐⭐
-    public void scrollToBottom(int maxSwipes) {
-        for (int i = 0; i < maxSwipes; i++) {
-            swipeUp();
-            waitMillis(300);
-        }
-    }
-
-    public void scrollToTop(int maxSwipes) {
-        for (int i = 0; i < maxSwipes; i++) {
-            swipeDown();
-            waitMillis(300);
-        }
-    }
-
-    // ⭐⭐⭐ ELEMENT VAR MI KONTROL ET ⭐⭐⭐
     public boolean isElementPresent(By locator, int maxSwipes) {
         for (int i = 0; i < maxSwipes; i++) {
             try {
@@ -257,11 +236,6 @@ public class ScrollHelper {
             }
         }
         return false;
-    }
-
-    public boolean isElementPresentByDescription(String description) {
-        By locator = By.xpath("//*[@content-desc=\"" + description + "\"]");
-        return isElementPresent(locator, 10);
     }
 
     public enum IdentifierType {

@@ -175,5 +175,14 @@ public class ReusableMethods {
         element.click();
     }
 
+    public static void scrollWithUiScrollableAndClick(String elementText) {
+        AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
+          driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + elementText + "\"))"));
+        driver.findElement(By.xpath("//*[@text='" + elementText + "']")).click();
+
+    }
+
+    // reusable method içine elementin tanımı ile ile uzerine scroll yapıp tıklyacak bir method eklermsiin
+
 
 }
