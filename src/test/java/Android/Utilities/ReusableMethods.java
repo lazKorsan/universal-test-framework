@@ -2,6 +2,8 @@ package Android.Utilities;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -180,6 +182,22 @@ public class ReusableMethods {
           driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + elementText + "\"))"));
         driver.findElement(By.xpath("//*[@text='" + elementText + "']")).click();
 
+    }
+
+    public static void KeyBack() {
+        AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
+        // Geri tuşuna basın
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+
+    }
+
+    public static void goToHomePage(AndroidDriver driver) {
+
+        // Android HOME tuşu
+        driver.pressKey(new KeyEvent(AndroidKey.HOME));
+
+        // App’i yeniden foreground’a al
+        driver.activateApp(driver.getCurrentPackage());
     }
 
     // reusable method içine elementin tanımı ile ile uzerine scroll yapıp tıklyacak bir method eklermsiin

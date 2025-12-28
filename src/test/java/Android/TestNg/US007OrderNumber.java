@@ -3,10 +3,14 @@ package Android.TestNg;
 import Android.Pages.MethodsPage;
 import Android.Utilities.AndroidDriver;
 import Android.Utilities.OrderHelper;
+import Android.Utilities.OrderInfo;
 import Android.Utilities.ReusableMethods;
 import io.appium.java_client.AppiumBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class US007OrderNumber {
 
@@ -14,6 +18,72 @@ public class US007OrderNumber {
 
     @Test
     public void USOO7_getOrderNumber(){
+        io.appium.java_client.android.AndroidDriver driver = AndroidDriver.getDriver();
+
+        methodsPage.loginWithPhoneNumber();
+        ReusableMethods.clickButtonByDescription("Profile");
+        ReusableMethods.clickButtonByDescription("Order History");
+
+
+        //<!-- todo elementin degerleri
+
+
+        // 1 numaralı işlem
+        WebElement orderInfoContainer = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"#2712251718\n" +
+                "08:24 PM, 27-12-2025\n" +
+                "Info: \n" +
+                "1 Product\n" +
+                "Delivery Status: \n" +
+                "Pending\n" +
+                "Payment Status: \n" +
+                "Paid\n" +
+                "Total: \n" +
+                "$50.00\")"));
+
+        String contentDesc = orderInfoContainer.getAttribute("content-desc");
+        String orderNumber = OrderInfo.extractOrderNumberFromContentDesc(contentDesc);
+
+        System.out.println("Sipariş Numarası: " + orderNumber);
+
+        OrderInfo.getFirstOrderByStatus(driver,"Pending");
+        System.out.println(orderInfoContainer); // ÇIKTISI AŞAĞIDAKİ GİBİ
+
+    }
+
+    @Test
+    public void US007DinamikOrderNumber(){
+        io.appium.java_client.android.AndroidDriver driver = AndroidDriver.getDriver();
+
+        methodsPage.loginWithPhoneNumber();
+        ReusableMethods.clickButtonByDescription("Profile");
+        ReusableMethods.clickButtonByDescription("Order History");
+
+        WebElement orderInfoContainer = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().description(\"#2712251718\n" +
+                "08:24 PM, 27-12-2025\n" +
+                "Info: \n" +
+                "1 Product\n" +
+                "Delivery Status: \n" +
+                "Pending\n" +
+                "Payment Status: \n" +
+                "Paid\n" +
+                "Total: \n" +
+                "$50.00\")"));
+
+        List<WebElement> orders = driver.findElements(
+                AppiumBy.className("android.widget.ImageView")
+        );
+
+        WebElement firstOrder = orders.get(0);
+        String contentDesc = firstOrder.getAttribute("content-desc");
+        String orderNumber = OrderInfo.extractOrderNumberFromContentDesc(contentDesc);
+        System.out.println("Sipariş Numarası: " + orderNumber);
+
+
+
+    }
+
+    @Test
+   public void US007Deneme3(){
         io.appium.java_client.android.AndroidDriver driver = AndroidDriver.getDriver();
         methodsPage.loginWithPhoneNumber();
         ReusableMethods.clickButtonByDescription("Profile");
@@ -30,27 +100,17 @@ public class US007OrderNumber {
                 "Total: \n" +
                 "$50.00\")"));
 
+        List<WebElement> orders = driver.findElements(
+                AppiumBy.className("android.widget.ImageView")
+        );
 
-        String orderNumber = orderInfoContainer.getText();
+        WebElement firstOrder = orders.get(0);
+        String contentDesc = firstOrder.getAttribute("content-desc");
+        String orderNumber = OrderHelper.extractOrderNumberFromContentDesc(contentDesc);
 
-        System.out.println("Sipariş Numarası: " + orderNumber);
-
-        //OrderHelper.getFirstOrderNumberFromPage();
-
-        //OrderHelper.extractOrderNumber(orderNumber);
-        //System.out.println("Sipariş Numarası: " + orderNumber);
-
-        //OrderHelper.extractOrderNumberFromContentDesc("#2712251718\\n08:24 PM, 27-12-2025\\nInfo: \\n1 Product\\nDelivery Status: \\nPending\\nPayment Status: \\nPaid\\nTotal: \\n$50.00");
-
-
-        OrderHelper.printElementContentByBounds(64,586,1376,1372);
-
-        OrderHelper.printElementDetails(orderInfoContainer);
-
-
+        OrderHelper.getFirstOrderNumberFromPage();
 
     }
-
 
 
 }

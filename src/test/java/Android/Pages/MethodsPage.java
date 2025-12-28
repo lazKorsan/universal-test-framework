@@ -102,7 +102,7 @@ public class MethodsPage {
             Actions actions = new Actions(driver);
 
             phoneTextBox.click();
-            phoneTextBox.sendKeys("5057193857");
+            phoneTextBox.sendKeys("5057193818");
 
             // TAB tuşu mobilde her zaman çalışmayabilir, ama deneyelim
             try {
