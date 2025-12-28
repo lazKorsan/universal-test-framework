@@ -5,13 +5,12 @@ import Android.Utilities.OrderHelper;
 import Android.Utilities.OrderInfo;
 import Android.Utilities.ReusableMethods;
 import Android.Utilities.ScrollHelper;
-import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static Android.Utilities.OrderInfo.clickFirstOrderByStatus;
 
-public class US008OrderNumber {
+public class US008ConfirmDeleteOrder {
 
     MethodsPage methodsPage = new MethodsPage();
 
@@ -39,6 +38,8 @@ public class US008OrderNumber {
         ReusableMethods.KeyBack();
 
         String canceledOrderNumber =  OrderHelper.getFirstOrderNumberFromPage();
+
+        System.out.println("silinenSipaiş Numarasi"+canceledOrderNumber);
 
 
         Assert.assertEquals(orderNumber, canceledOrderNumber,
