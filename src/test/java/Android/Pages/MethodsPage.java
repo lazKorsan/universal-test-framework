@@ -3,7 +3,10 @@ package Android.Pages;
 import Android.Utilities.ReusableMethods;
 import Android.Utilities.ScrollHelper;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.By;
@@ -257,10 +260,7 @@ public class MethodsPage {
     public void addToAddress(){
 
         io.appium.java_client.android.AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
-        Assert.assertNotNull(driver, "AndroidDriver başlatılamadı!");
-        //ReusableMethods.bekle(2);
 
-        loginWithPhoneNumber();
 
         //<!-- todo dynamic method için gerekli
 
@@ -348,12 +348,20 @@ public class MethodsPage {
         addAddressButton.click();
         //ReusableMethods.bekle(2);
 
+        ReusableMethods.KeyBack();
+
+        ReusableMethods.clickButtonByDescription("Home");
+
+
+
+
+
     }
 
     public void createOrder(){
         io.appium.java_client.android.AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
         Assert.assertNotNull(driver, "AndroidDriver başlatılamadı!");
-        loginWithPhoneNumber();
+       // loginWithPhoneNumber();
         ReusableMethods.bekle(6);
 
         ReusableMethods.clickButtonByDescription("Men Clothing");
@@ -436,5 +444,9 @@ public class MethodsPage {
         // Test başarılı mesajı
         System.out.println("✅ US006_CreateOrder testi başarıyla tamamlandı!");
     }
+
+
+
+
 
     }

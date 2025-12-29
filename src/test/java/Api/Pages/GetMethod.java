@@ -1,4 +1,4 @@
-package Api.TestNg.Courses;
+package Api.Pages;
 
 import Api.Utilities.API_Methods;
 import Api.Utilities.HooksAPI;
@@ -21,6 +21,11 @@ public class GetMethod {
     @Test
     public static void testGetCourses() {
         getModules("admin", "courses", "success", 200);
+    }
+
+    @Test
+    public static void getCoursesID(){
+        getModules("admin","course/1995","success",200);
     }
 
 }

@@ -1,0 +1,146 @@
+
+
+C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Api\TestNg\MethodDenemeleri\GetSorgusuATIF.java
+
+buradaki sınıfın assertionlarını bir case ile bağlayabilrimiyiz.
+modulerdeki message içerikli farklı
+
+getModulesATIF("category",11180); için dönen sonuç
+✓ Extracted path param [param0]: 11995
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not course for this id."
+    }
+}
+
+
+getModulesATIF("category",11180);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not category for this id."
+    }
+}
+
+//<!--
+getSorgusuATIT("pricePlan",1413); //
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not ticket for this id."
+    }
+}
+//       --!>
+
+
+//<!--
+getSorgusuATIT("coursefaq",1114);
+
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not course faq for this id."
+    }
+}
+//       --!>
+
+
+getSorgusuATIT("product",1115);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not product for this id."
+    }
+}
+
+getSorgusuATIT("productCategory",111184);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not product category for this id."
+    }
+}
+
+getSorgusuATIT("productfaq",11118);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not product faq for this id."
+    }
+}
+
+getSorgusuATIT("blog",11193);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not blog for this id."
+    }
+}
+
+
+getSorgusuATIT("blogCategory",11134);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not category for this id."
+    }
+}
+
+getSorgusuATIT("coupon",111398);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not coupon for this id."
+    }
+}
+
+getSorgusuATIT("support",111128);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not support message for this id."
+    }
+}
+
+getSorgusuATIT("department",11157);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not support department for this id."
+    }
+}
+
+getSorgusuATIT("contact",111141);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not contact message for this id."
+    }
+}
+
+getSorgusuATIT("badge",111122);
+{
+    "remark": "failed",
+    "status": 203,
+    "data": {
+        "message": "There is not badge for this id."
+    }
+}
+
+
+
+

@@ -1,6 +1,7 @@
 package Android.Utilities;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -10,7 +11,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ReusableMethods {
 
@@ -199,6 +202,18 @@ public class ReusableMethods {
         // App’i yeniden foreground’a al
         driver.activateApp(driver.getCurrentPackage());
     }
+
+    //public static void goToHomePage(AndroidDriver driver,
+      //                              String appPackage,
+        //                            String mainActivity) {
+
+        //Map<String, Object> args = new HashMap<>();
+        //args.put("appPackage", appPackage);
+        //args.put("appActivity", mainActivity);
+        //args.put("stopApp", false); // 🔥 session korunur
+
+        //driver.executeScript("mobile: startActivity", args);
+    //}
 
     // reusable method içine elementin tanımı ile ile uzerine scroll yapıp tıklyacak bir method eklermsiin
 
