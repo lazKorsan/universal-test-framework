@@ -11,7 +11,7 @@ public class mixedTest {
     public void testtttt(){
         io.appium.java_client.android.AndroidDriver driver = Android.Utilities.AndroidDriver.getDriver();
         methodsPage.loginWithPhoneNumber();
-        browserTest.browserTes2t();
+        US01DeliveredTest.queryCartChangeStatusDelivered();
         methodsPage.profileButton.click();
     }
 }
