@@ -1,3 +1,5 @@
 
 belirtilen dosyayı çalıştırır
 python python/browser/gogole.py
+
+Ctrl shift 10
