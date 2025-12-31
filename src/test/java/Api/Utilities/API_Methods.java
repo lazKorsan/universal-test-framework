@@ -81,6 +81,7 @@ public class API_Methods {
 
         if (response != null) {
             response.prettyPrint();
+            setupValidator(); // Validator'e response'u set et
         }
 
         return response;

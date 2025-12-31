@@ -1,0 +1,1090 @@
+
+son kez bakarmsıın.
+
+geçmezse geçmeyenleri kaldırabilriz.
+
+C:\Users\user\.jdks\jbrsdk_jcef-21.0.9\bin\java.exe -javaagent:C:\Users\user\AppData\Local\JetBrains\IdeaIC2025.2\captureAgent\debugger-agent.jar=file:///C:/Users/user/AppData/Local/Temp/capture3843272213803679900.props -ea -Dfile.encoding=UTF-8 -Didea.test.cyclic.buffer.size=1048576 "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.3\lib\idea_rt.jar=56691" -Dkotlinx.coroutines.debug.enable.creation.stack.trace=false -Ddebugger.agent.enable.coroutines=true -Dkotlinx.coroutines.debug.enable.flows.stack.trace=true -Dkotlinx.coroutines.debug.enable.mutable.state.flows.stack.trace=true -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.3\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.3\plugins\testng\lib\testng-rt.jar;C:\Users\user\IdeaProjects\universal-test-framework\target\test-classes;C:\Users\user\IdeaProjects\universal-test-framework\target\classes;C:\Users\user\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\user\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\user\.m2\repository\io\appium\java-client\9.1.0\java-client-9.1.0.jar;C:\Users\user\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\user\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-reload4j\2.0.9\slf4j-reload4j-2.0.9.jar;C:\Users\user\.m2\repository\ch\qos\reload4j\reload4j\1.2.22\reload4j-1.2.22.jar;C:\Users\user\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\user\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\user\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\user\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\user\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\user\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\user\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\user\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\user\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\user\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\user\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-java\4.16.1\selenium-java-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-api\4.16.1\selenium-api-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.16.1\selenium-chrome-driver-4.16.1.jar;C:\Users\user\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.16.1\selenium-chromium-driver-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-json\4.16.1\selenium-json-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.16.1\selenium-manager-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.16.1\selenium-devtools-v118-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.16.1\selenium-devtools-v119-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.16.1\selenium-devtools-v120-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.16.1\selenium-devtools-v85-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.16.1\selenium-edge-driver-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.1\selenium-firefox-driver-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.1\selenium-http-4.16.1.jar;C:\Users\user\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.16.1\selenium-ie-driver-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.16.1\selenium-remote-driver-4.16.1.jar;C:\Users\user\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\user\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\user\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\user\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\user\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\user\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-os\4.16.1\selenium-os-4.16.1.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.16.1\selenium-safari-driver-4.16.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-support\4.16.1\selenium-support-4.16.1.jar;C:\Users\user\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\user\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\user\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\user\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\user\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\user\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\user\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\user\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\user\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\user\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\user\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\user\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\user\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\user\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\user\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\user\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\user\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\user\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\user\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\user\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\user\.m2\repository\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;C:\Users\user\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\user\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\user\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\user\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar" com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket56690 @w@C:\Users\user\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\user\AppData\Local\Temp\idea_testng.tmp
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Loaded config file: src/test/resources/config/config-local.yaml
+Loaded config file: src/test/resources/config/config-local.yaml
+Token : 16328|PXNt2cS3ajjvNCoLq0oxnUdc33Jy8jY1xAKtYE45
+Path segments: [api, course, 1995]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 1995
+✓ Extracted path param [param0]: 1995
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 1995,
+        "teacher_id": 1016,
+        "creator_id": 1016,
+        "category_id": 611,
+        "type": "course",
+        "private": 0,
+        "slug": "Become-a-Project-Manager",
+        "start_date": null,
+        "duration": 150,
+        "timezone": "America/New_York",
+        "thumbnail": "/store/1/product-management-.jpg",
+        "image_cover": "/store/1/product-management.jpg",
+        "video_demo": "https://www.youtube.com/watch?v=Jk-JwtScIlw&pp=ygUScHJvamVjdCBtYW5hZ2VtZW50",
+        "video_demo_source": "youtube",
+        "capacity": null,
+        "price": null,
+        "organization_price": null,
+        "support": 1,
+        "certificate": 0,
+        "downloadable": 1,
+        "partner_instructor": 0,
+        "subscribe": 0,
+        "forum": 0,
+        "enable_waitlist": 0,
+        "access_days": null,
+        "points": null,
+        "message_for_reviewer": null,
+        "status": "active",
+        "created_at": 1624867858,
+        "updated_at": 1711967895,
+        "deleted_at": null,
+        "title": null,
+        "description": null,
+        "seo_description": null,
+        "translations": [
+            {
+                "id": 1,
+                "webinar_id": 1995,
+                "locale": "en",
+                "title": "Become a Project Manager",
+                "seo_description": "The most complete course available on Project Management.",
+                "description": "<p style=\"border: 0px solid rgb(227, 227, 227); --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin-right: 0px; margin-bottom: 1.25em; margin-left: 0px; color: rgb(13, 13, 13); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; font-size: 16px; white-space-collapse: preserve;\">The most updated and comprehensive Project Management course on Udemy! You'll learn the skills that encompass the entire Project Management role and process: from project initiation to planning, from stakeholder analysis to risk management, from scheduling to budgeting, and from execution to monitoring and controlling. We also include real-world case studies, interactive exercises, and downloadable resources to enhance your learning experience.</p><p style=\"border: 0px solid rgb(227, 227, 227); --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin: 1.25em 0px; color: rgb(13, 13, 13); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; font-size: 16px; white-space-collapse: preserve;\">Currently, there are over 3,000+ job listings worldwide seeking Project Managers, offering competitive salaries averaging $100,000 / year.</p><p style=\"border: 0px solid rgb(227, 227, 227); --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin: 1.25em 0px; color: rgb(13, 13, 13); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; font-size: 16px; white-space-collapse: preserve;\">The demand for Project Management is rapidly increasing as organizations recognize the critical role it plays in achieving successful outcomes.</p><p style=\"border: 0px solid rgb(227, 227, 227); --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin: 1.25em 0px; color: rgb(13, 13, 13); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; font-size: 16px; white-space-collapse: preserve;\">But how do you break into the field? There are no specific degrees or certifications for Project Management, and many Project Managers enter the field through chance or connections. That changes here - we'll equip you with all the essential skills needed for Project Management and give you the best chance of securing your desired job. No more guesswork - we'll provide you with clear guidance on what you need to learn and what steps to take, all from an experienced Project Management professional.</p><p style=\"border: 0px solid rgb(227, 227, 227); --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; margin: 1.25em 0px 0px; color: rgb(13, 13, 13); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; font-size: 16px; white-space-collapse: preserve;\">Students are not required to have prior knowledge - we'll cover the basics, teach you how to apply them effectively, help you advance your project management skills, and ultimately, maximize your opportunities for landing a job as a Project Manager.</p><p style=\"margin-top: 0.8rem; font-size: inherit; max-width: 118.4rem;\"><br style=\"margin: 0px; padding: 0px; color: rgb(60, 59, 55); font-family: \" sf=\"\" pro=\"\" text\",=\"\" -apple-system,=\"\" blinkmacsystemfont,=\"\" roboto,=\"\" \"segoe=\"\" ui\",=\"\" helvetica,=\"\" arial,=\"\" sans-serif,=\"\" \"apple=\"\" color=\"\" emoji\",=\"\" ui=\"\" symbol\";=\"\" font-size:=\"\" 14px;\"=\"\"></p>"
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.teacher_id
+Actual Value: 1016
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.creator_id
+Actual Value: 1016
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.category_id
+Actual Value: 611
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.type
+Actual Value: course
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.private
+Actual Value: 0
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.slug
+Actual Value: Become-a-Project-Manager
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.start_date
+Actual Value: null
+==================================================
+
+java.lang.AssertionError: JSON Path 'data.start_date' returned null!
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at Api.Utilities.PathParamValidator.validateExistence(PathParamValidator.java:97)
+	at Api.Utilities.PathParamValidator.validate(PathParamValidator.java:48)
+	at Api.Utilities.API_Methods.assertPathParam(API_Methods.java:171)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.verifyResponseBody(VerifyResponseBody.java:38)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.testVerifyResponseBody(VerifyResponseBody.java:275)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Token : 16329|N3BOELtIzjIJrjoEuyktPIA8kQmZy0kPSzAqhkK0
+Path segments: [api, category, 1180]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 1180
+✓ Extracted path param [param0]: 1180
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 1180,
+        "slug": "Online-Education-41",
+        "parent_id": null,
+        "icon": "/store/1/default_images/categories_icons/code.png",
+        "order": 232,
+        "title": null,
+        "sub_categories": [
+
+        ],
+        "translations": [
+            {
+                "id": 623,
+                "category_id": 1180,
+                "locale": "en",
+                "title": "Online Education"
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.slug
+Actual Value: Online-Education-41
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.parent_id
+Actual Value: null
+==================================================
+
+java.lang.AssertionError: JSON Path 'data.parent_id' returned null!
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at Api.Utilities.PathParamValidator.validateExistence(PathParamValidator.java:97)
+	at Api.Utilities.PathParamValidator.validate(PathParamValidator.java:48)
+	at Api.Utilities.API_Methods.assertPathParam(API_Methods.java:171)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.verifyResponseBody(VerifyResponseBody.java:46)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.testVerifyResponseBody(VerifyResponseBody.java:275)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Token : 16330|4yHZHc2VvFtaEuCdd3hCUQdEsZO9oZLIREHzI8ii
+Path segments: [api, pricePlan, 413]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 413
+✓ Extracted path param [param0]: 413
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 413,
+        "creator_id": 1914,
+        "webinar_id": 2002,
+        "bundle_id": null,
+        "start_date": 1717200000,
+        "end_date": 1719705600,
+        "discount": 20,
+        "capacity": 50,
+        "order": null,
+        "created_at": 1764523251,
+        "updated_at": null,
+        "deleted_at": null,
+        "title": null,
+        "translations": [
+            {
+                "id": 386,
+                "ticket_id": 413,
+                "locale": "en",
+                "title": "Test Price Plans"
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.creator_id
+Actual Value: 1914
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.webinar_id
+Actual Value: 2002
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.bundle_id
+Actual Value: null
+==================================================
+
+java.lang.AssertionError: JSON Path 'data.bundle_id' returned null!
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at Api.Utilities.PathParamValidator.validateExistence(PathParamValidator.java:97)
+	at Api.Utilities.PathParamValidator.validate(PathParamValidator.java:48)
+	at Api.Utilities.API_Methods.assertPathParam(API_Methods.java:171)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.verifyResponseBody(VerifyResponseBody.java:61)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.testVerifyResponseBody(VerifyResponseBody.java:275)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Token : 16331|GKBYDNZ2VOWHVsaDvehrYp5WQrRAZNMowvImgWNf
+Path segments: [api, coursefaq, 14]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 14
+✓ Extracted path param [param0]: 14
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 14,
+        "creator_id": 1016,
+        "webinar_id": 1995,
+        "bundle_id": null,
+        "upcoming_course_id": null,
+        "order": null,
+        "created_at": 1624908812,
+        "updated_at": 1718059480,
+        "title": null,
+        "answer": null,
+        "translations": [
+            {
+                "id": 2,
+                "faq_id": 14,
+                "locale": "en",
+                "title": "What are the key features that differentiate your online learning platform from others? Updated",
+                "answer": "The key features that distinguish our online learning platform from others include: a wide range of course content, interactive learning tools, student support services, personalized learning paths that provide a customized learning experience, and a team of up-to-date and qualified instructors. Updated."
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.creator_id
+Actual Value: 1016
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.webinar_id
+Actual Value: 1995
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.bundle_id
+Actual Value: null
+==================================================
+
+java.lang.AssertionError: JSON Path 'data.bundle_id' returned null!
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at Api.Utilities.PathParamValidator.validateExistence(PathParamValidator.java:97)
+	at Api.Utilities.PathParamValidator.validate(PathParamValidator.java:48)
+	at Api.Utilities.API_Methods.assertPathParam(API_Methods.java:171)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.verifyResponseBody(VerifyResponseBody.java:82)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.testVerifyResponseBody(VerifyResponseBody.java:275)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Token : 16332|Jjb53ZdXIdCIr0GcGvo4ISGQ5ChWsaGc7IRLSFiG
+Path segments: [api, product, 5]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 5
+✓ Extracted path param [param0]: 5
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 5,
+        "creator_id": 1015,
+        "type": "physical",
+        "slug": "Business-Software",
+        "category_id": 2,
+        "price": 1990,
+        "point": 3,
+        "unlimited_inventory": 0,
+        "ordering": 1,
+        "inventory": 95,
+        "inventory_warning": 10,
+        "inventory_updated_at": null,
+        "delivery_fee": null,
+        "delivery_estimated_time": null,
+        "message_for_reviewer": "Thank you.",
+        "tax": null,
+        "commission": null,
+        "status": "active",
+        "updated_at": 1656130921,
+        "created_at": 1655671880,
+        "title": null,
+        "seo_description": null,
+        "summary": null,
+        "description": null,
+        "translations": [
+            {
+                "id": 5,
+                "product_id": 5,
+                "locale": "en",
+                "title": "Updated Product Title",
+                "seo_description": "Business software is any software or set of computer programs used by business users to perform various business functions.",
+                "summary": "Updated summary for the product",
+                "description": "Updated description for the product"
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.creator_id
+Actual Value: 1015
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.type
+Actual Value: physical
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.slug
+Actual Value: Business-Software
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.category_id
+Actual Value: 2
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.price
+Actual Value: 1990
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.point
+Actual Value: 3
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.unlimited_inventory
+Actual Value: 0
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.ordering
+Actual Value: 1
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.inventory
+Actual Value: 95
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.id
+Actual Value: 5
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].product_id
+Actual Value: 5
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].locale
+Actual Value: en
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].title
+Actual Value: Updated Product Title
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].seo_description
+Actual Value: Business software is any software or set of computer programs used by business users to perform various business functions.
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].summary
+Actual Value: Updated summary for the product
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].description
+Actual Value: Updated description for the product
+==================================================
+Module: product ID: 5 - Response Body Verified.
+Token : 16333|74Hq5ZcPhMCcE6ZK5mqToSzamsF8CCHBGv5cRSrQ
+Path segments: [api, productCategory, 184]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 184
+✓ Extracted path param [param0]: 184
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 184,
+        "parent_id": null,
+        "icon": "/store/1/default_images/categories_icons/code.png",
+        "order": null,
+        "title": null,
+        "translations": [
+            {
+                "id": 190,
+                "product_category_id": 184,
+                "locale": "en",
+                "title": "Educational Equipment"
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.parent_id
+Actual Value: null
+==================================================
+
+java.lang.AssertionError: JSON Path 'data.parent_id' returned null!
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at Api.Utilities.PathParamValidator.validateExistence(PathParamValidator.java:97)
+	at Api.Utilities.PathParamValidator.validate(PathParamValidator.java:48)
+	at Api.Utilities.API_Methods.assertPathParam(API_Methods.java:171)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.verifyResponseBody(VerifyResponseBody.java:117)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.testVerifyResponseBody(VerifyResponseBody.java:275)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Token : 16334|g1jBZgRtYXVu9jwTaCIbieWsIaogZlhZ3pDNbsk8
+Path segments: [api, blog, 93]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 93
+✓ Extracted path param [param0]: 93
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 93,
+        "category_id": 34,
+        "author_id": 1914,
+        "slug": "The-Growing-Impact-of-Online-Education-46",
+        "image": "/store/1/blog-default.jpg",
+        "visit_count": 6,
+        "enable_comment": 0,
+        "status": "publish",
+        "created_at": 1764523260,
+        "updated_at": 1764523260,
+        "title": null,
+        "description": null,
+        "meta_description": null,
+        "content": null,
+        "translations": [
+            {
+                "id": 95,
+                "blog_id": 93,
+                "locale": "en",
+                "title": "The Growing Impact of Online Education",
+                "description": "Online education has rapidly evolved from a niche alternative to a mainstream method of learning. This transformation has been driven by technological advancements, changing perceptions, and the need for flexible learning options.",
+                "content": "Accessibility Through MOOCs:Massive Open Online Courses (MOOCs) pioneered accessible online learning, offering high-quality courses from prestigious universities to a global audience. Platforms like Coursera and edX made education more inclusive, breaking down geographical and financial barriers.Personalized Learning:Advancements in adaptive learning technologies and AI have enabled personalized learning experiences. Online platforms can now tailor content and assessments to individual learners, improving engagement and outcomes.Accredited Online Degrees:The credibility of online degrees has grown, with many accredited universities offering fully online programs. These programs provide flexibility without sacrificing quality, making higher education more accessible to diverse learners.Blended Learning:Blended learning models, combining online and face-to-face instruction, have become popular. This approach maintains the benefits of traditional classrooms while leveraging online resources for enhanced learning experiences.",
+                "meta_description": "Online education has rapidly evolved from a niche alternative to a mainstream method of learning. This transformation has been driven by technological advancements, changing perceptions, and the need for flexible learning options."
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.category_id
+Actual Value: 34
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.author_id
+Actual Value: 1914
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.slug
+Actual Value: The-Growing-Impact-of-Online-Education-46
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.image
+Actual Value: /store/1/blog-default.jpg
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.visit_count
+Actual Value: 6
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.enable_comment
+Actual Value: 0
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.status
+Actual Value: publish
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.created_at
+Actual Value: 1764523260
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.updated_at
+Actual Value: 1764523260
+==================================================
+Module: blog ID: 93 - Response Body Verified.
+Token : 16335|lTHxNbhIOzqvGryKUh2kTPvdBhHG7208EUthL557
+Path segments: [api, blogCategory, 34]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 34
+✓ Extracted path param [param0]: 34
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 34,
+        "title": "Blog",
+        "slug": "blog"
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.slug
+Actual Value: blog
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.title
+Actual Value: Blog
+==================================================
+Module: blogCategory ID: 34 - Response Body Verified.
+Token : 16336|QO8laUCULkNAuH09ljaJXPsZpyvXJujDnq6RjmLD
+Path segments: [api, coupon, 398]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 398
+✓ Extracted path param [param0]: 398
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 398,
+        "creator_id": 1914,
+        "title": "Duplicate Code Coupon",
+        "discount_type": "percentage",
+        "source": "course",
+        "code": "322",
+        "percent": 10,
+        "amount": 5,
+        "max_amount": 100,
+        "minimum_order": 1,
+        "count": 20,
+        "user_type": "all_users",
+        "product_type": "all",
+        "for_first_purchase": 0,
+        "status": "active",
+        "expired_at": 1735621200,
+        "created_at": 1764530097
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.creator_id
+Actual Value: 1914
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.title
+Actual Value: Duplicate Code Coupon
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.discount_type
+Actual Value: percentage
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.source
+Actual Value: course
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.code
+Actual Value: 322
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.percent
+Actual Value: 10
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.amount
+Actual Value: 5
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.max_amount
+Actual Value: 100
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.minimum_order
+Actual Value: 1
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.count
+Actual Value: 20
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.user_type
+Actual Value: all_users
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.product_type
+Actual Value: all
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.for_first_purchase
+Actual Value: 0
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.status
+Actual Value: active
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.expired_at
+Actual Value: 1735621200
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.created_at
+Actual Value: 1764530097
+==================================================
+Module: coupon ID: 398 - Response Body Verified.
+Token : 16337|t8pJTHCHSbeJPV8oVygu1v5blskvRoJ5k42Jm93i
+Path segments: [api, support, 28]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 28
+✓ Extracted path param [param0]: 28
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 28,
+        "user_id": 923,
+        "webinar_id": null,
+        "department_id": 3,
+        "title": "Commission Rate",
+        "status": "open",
+        "created_at": 1625892221,
+        "updated_at": 1717974773,
+        "status_order": "a",
+        "user": {
+            "id": 923,
+            "full_name": "Sawyer Emerson",
+            "role_name": "teacher"
+        }
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.user_id
+Actual Value: 923
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.webinar_id
+Actual Value: null
+==================================================
+
+java.lang.AssertionError: JSON Path 'data.webinar_id' returned null!
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at Api.Utilities.PathParamValidator.validateExistence(PathParamValidator.java:97)
+	at Api.Utilities.PathParamValidator.validate(PathParamValidator.java:48)
+	at Api.Utilities.API_Methods.assertPathParam(API_Methods.java:171)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.verifyResponseBody(VerifyResponseBody.java:187)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.testVerifyResponseBody(VerifyResponseBody.java:275)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Token : 16338|xEZjt1dDjyNHqgG2OxBeOW23WzUI6nHt8h3d8xpX
+Path segments: [api, department, 57]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 57
+✓ Extracted path param [param0]: 57
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 57,
+        "created_at": 1760805065,
+        "title": null,
+        "translations": [
+            {
+                "id": 59,
+                "support_department_id": 57,
+                "locale": "en",
+                "title": "Technical Office"
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.created_at
+Actual Value: 1760805065
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.id
+Actual Value: 57
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].support_department_id
+Actual Value: 57
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].locale
+Actual Value: en
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].title
+Actual Value: Technical Office
+==================================================
+Module: department ID: 57 - Response Body Verified.
+Token : 16339|NhPGSljRIceJVIjgwAvb5Nbwh4Ti1BjJQQmbRA1H
+Path segments: [api, contact, 41]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 41
+✓ Extracted path param [param0]: 41
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 41,
+        "name": "NIHAD",
+        "email": "farajovnihad@gmail.com",
+        "phone": "57193829",
+        "subject": "dd",
+        "message": "ff",
+        "reply": null,
+        "status": "pending",
+        "created_at": 1758480863
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.name
+Actual Value: NIHAD
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.email
+Actual Value: farajovnihad@gmail.com
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.phone
+Actual Value: 57193829
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.subject
+Actual Value: dd
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.message
+Actual Value: ff
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.reply
+Actual Value: null
+==================================================
+
+java.lang.AssertionError: JSON Path 'data.reply' returned null!
+
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at Api.Utilities.PathParamValidator.validateExistence(PathParamValidator.java:97)
+	at Api.Utilities.PathParamValidator.validate(PathParamValidator.java:48)
+	at Api.Utilities.API_Methods.assertPathParam(API_Methods.java:171)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.verifyResponseBody(VerifyResponseBody.java:221)
+	at Api.TestNg.MethodDenemeleri.VerifyResponseBody.testVerifyResponseBody(VerifyResponseBody.java:275)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+Token : 16340|SpNDON078q3v22MC8zfl1OSLWRIP2OO3VsDSCW8w
+Path segments: [api, badge, 22]
+fullPath = /{pp0}/{pp1}/{pp2}
+Extracted ID: 22
+✓ Extracted path param [param0]: 22
+{
+    "remark": "success",
+    "status": 200,
+    "data": {
+        "id": 22,
+        "image": "/store/1/default_images/badges/loyal_user.png",
+        "type": "register_date",
+        "condition": {
+            "from": "31",
+            "to": "365"
+        },
+        "score": 10,
+        "created_at": 1625554171,
+        "title": null,
+        "description": null,
+        "translations": [
+            {
+                "id": 2,
+                "badge_id": 22,
+                "locale": "en",
+                "title": "Loyal User",
+                "description": "1 year of Membership"
+            }
+        ]
+    }
+}
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.image
+Actual Value: /store/1/default_images/badges/loyal_user.png
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.type
+Actual Value: register_date
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.score
+Actual Value: 10
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.created_at
+Actual Value: 1625554171
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.id
+Actual Value: 22
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.condition.from
+Actual Value: 31
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.condition.to
+Actual Value: 365
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].badge_id
+Actual Value: 22
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].locale
+Actual Value: en
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].title
+Actual Value: Loyal User
+==================================================
+==================================================
+EXISTENCE CHECK:
+JSON Path: data.translations[0].description
+Actual Value: 1 year of Membership
+==================================================
+Module: badge ID: 22 - Response Body Verified.
+
+===============================================
+Default Suite
+Total tests run: 13, Passes: 6, Failures: 7, Skips: 0
+===============================================
+
+
+Process finished with exit code 0
