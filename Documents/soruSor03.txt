@@ -1,5 +1,5 @@
 
-caselerin uzerinden bir kere daha geçebilrimsin
+
 Token : 16262|EqjJiyVRvvIUcQdCy2PSXFV48VPEJONYc4TAQgIC
 Path segments: [api, course, 1995]
 fullPath = /{pp0}/{pp1}/{pp2}
