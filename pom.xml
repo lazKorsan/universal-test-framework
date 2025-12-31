@@ -24,6 +24,7 @@
         <appium.version>9.1.0</appium.version>
         <jackson.version>2.16.1</jackson.version>
         <webdrivermanager.version>5.8.0</webdrivermanager.version>
+        <poi.version>5.2.5</poi.version>
     </properties>
 
     <dependencyManagement>
@@ -165,6 +166,18 @@
             <groupId>org.awaitility</groupId>
             <artifactId>awaitility</artifactId>
             <version>4.2.0</version>
+        </dependency>
+
+        <!-- 8. EXCEL UTILITIES (Apache POI) -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
         </dependency>
     </dependencies>
 

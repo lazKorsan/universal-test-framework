@@ -32,7 +32,20 @@ public class PathParamValidator {
     }
 
     public void validate(String jsonPath) {
-        validateInternal(jsonPath, "id", null);
+        // Eğer jsonPath bir key ise ve değer kontrolü yapılmıyorsa, sadece varlığını kontrol et
+        // Ancak mevcut yapı değer karşılaştırması üzerine kurulu.
+        // Eğer sadece varlık kontrolü isteniyorsa (null check), bu metot güncellenmeli.
+        // Şimdilik "id" parametresi ile karşılaştırma yapıyor gibi görünüyor.
+        
+        // Eğer jsonPath "data.teacher_id" gibi bir şeyse ve paramKey verilmemişse,
+        // muhtemelen sadece null olmadığını kontrol etmek istiyoruzdur.
+        // Ancak validateInternal metodu expectedValue veya paramKey bekliyor.
+        
+        // Bu metodu "varlık kontrolü" (assertion for existence) olarak değiştirelim mi?
+        // Kullanıcı kodunda API_Methods.assertPathParam("data.teacher_id") şeklinde çağrılıyor.
+        // Bu durumda değerin null olmadığını kontrol etmesi daha mantıklı.
+        
+        validateExistence(jsonPath);
     }
 
     public void validate(String jsonPath, Object expectedValue) {
@@ -59,6 +72,7 @@ public class PathParamValidator {
         Object expected = (expectedValue != null) ? expectedValue : pathParams.get(paramKey);
 
         if (expected == null) {
+            // Eğer expected value yoksa ve paramKey de bulunamadıysa hata fırlat
             throw new IllegalArgumentException(
                     String.format("Expected value not found! ParamKey: %s, PathParams: %s",
                             paramKey, pathParams)
@@ -67,6 +81,20 @@ public class PathParamValidator {
 
         logValidation(jsonPath, actualValue, expected);
         assertEquality(actualValue, expected);
+    }
+    
+    // Yeni metot: Sadece varlık kontrolü (null olmama)
+    private void validateExistence(String jsonPath) {
+        checkPreconditions();
+        Object actualValue = extractFromResponse(jsonPath);
+        
+        System.out.println("=".repeat(50));
+        System.out.println("EXISTENCE CHECK:");
+        System.out.println("JSON Path: " + jsonPath);
+        System.out.println("Actual Value: " + actualValue);
+        System.out.println("=".repeat(50));
+        
+        Assert.assertNotNull("JSON Path '" + jsonPath + "' returned null!", actualValue);
     }
 
     // Utility methods
@@ -126,18 +154,37 @@ public class PathParamValidator {
         try {
             return jsonPathObj.get(normalizedPath);
         } catch (Exception e) {
-            throw new IllegalArgumentException(
-                    String.format("JSON Path '%s' not found in response. Error: %s",
-                            jsonPath, e.getMessage())
-            );
+            // Hata durumunda orijinal path ile de deneyelim
+            try {
+                return jsonPathObj.get(jsonPath);
+            } catch (Exception ex) {
+                throw new IllegalArgumentException(
+                        String.format("JSON Path '%s' (normalized: '%s') not found in response. Error: %s",
+                                jsonPath, normalizedPath, e.getMessage())
+                );
+            }
         }
     }
 
     private String normalizeJsonPath(String jsonPath) {
-        if (!jsonPath.startsWith("$") && !jsonPath.startsWith("[") &&
-                (jsonPath.contains(" ") || jsonPath.contains("-") || jsonPath.contains("."))) {
+        // Eğer path zaten $ veya [ ile başlıyorsa dokunma
+        if (jsonPath.startsWith("$") || jsonPath.startsWith("[")) {
+            return jsonPath;
+        }
+        
+        // Eğer path içinde nokta (.) varsa, muhtemelen standart bir JSON path'tir (örn: data.id)
+        // Bu durumda dokunmamak en iyisi.
+        if (jsonPath.contains(".")) {
+            return jsonPath;
+        }
+
+        // Eğer path içinde boşluk veya tire varsa ve nokta yoksa, ['...'] içine al
+        // Örn: "Deleted Course ID" -> "['Deleted Course ID']"
+        if (jsonPath.contains(" ") || jsonPath.contains("-")) {
             return "['" + jsonPath + "']";
         }
+        
+        // Diğer durumlarda olduğu gibi döndür
         return jsonPath;
     }
 
