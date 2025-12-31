@@ -2,8 +2,7 @@
 
 C:\Users\user\IdeaProjects\universal-test-framework\src\test\java\Api\TestNg\MethodDenemeleri\GetSorgusuATIF.java
 
-buradaki sınıfın assertionlarını bir case ile bağlayabilrimiyiz.
-modulerdeki message içerikli farklı
+
 
 getModulesATIF("category",11180); için dönen sonuç
 ✓ Extracted path param [param0]: 11995
