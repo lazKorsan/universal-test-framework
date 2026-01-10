@@ -3,7 +3,7 @@ package Api.Utilities;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.junit.Assert;
+import org.testng.Assert;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -22,6 +22,14 @@ public class API_Methods {
     // ==================== PATH PARAM METHODS ====================
 
     public static void pathParam(String rawPaths) {
+        // Reset ID to avoid stale state from previous tests
+        id = 0;
+
+        // Remove leading slash to ensure clean processing
+        if (rawPaths.startsWith("/")) {
+            rawPaths = rawPaths.substring(1);
+        }
+
         if (!rawPaths.matches(".*\\d+.*")) {
             fullPath = "/" + rawPaths;
             System.out.println("[STATIC ENDPOINT] fullPath = " + fullPath);
@@ -38,10 +46,14 @@ public class API_Methods {
             String value = paths[i].trim();
 
             spec.pathParam(key, value);
-            tempPath.append(key + "}/{");
+            tempPath.append(key).append("}/{");
 
             if (value.matches("\\d+")) {
-                id = Integer.parseInt(value);
+                try {
+                    id = Integer.parseInt(value);
+                } catch (NumberFormatException e) {
+                    System.out.println("Warning: Path segment '" + value + "' is a number but too large for int.");
+                }
             }
         }
 
@@ -121,10 +133,16 @@ public class API_Methods {
     // ==================== VALIDATION METHODS ====================
 
     public static void statusCodeAssert(int statusCode) {
+        if (response == null) {
+            Assert.fail("Response is null. Cannot assert status code.");
+        }
         response.then().assertThat().statusCode(statusCode);
     }
 
     public static void assertBody(String path, Object value) {
+        if (response == null) {
+            Assert.fail("Response is null. Cannot assert body.");
+        }
         response.then().assertThat().body(path, equalTo(value));
     }
 
@@ -200,8 +218,7 @@ public class API_Methods {
         System.out.println("Deleted Course ID in response: " + deletedId);
         System.out.println("Expected ID from path param: " + id);
 
-        Assert.assertEquals("Deleted ID doesn't match!",
-                String.valueOf(id), deletedId);
+        Assert.assertEquals(deletedId, String.valueOf(id), "Deleted ID doesn't match!");
     }
 
     public static void assertPathParamLegacy(String jsonKey, Object expectedValue) {
@@ -216,8 +233,7 @@ public class API_Methods {
         System.out.println("Response value (" + jsonKey + "): " + actualValue);
         System.out.println("Expected value: " + expectedValue);
 
-        Assert.assertEquals(jsonKey + " value doesn't match!",
-                String.valueOf(expectedValue), String.valueOf(actualValue));
+        Assert.assertEquals(String.valueOf(actualValue), String.valueOf(expectedValue), jsonKey + " value doesn't match!");
     }
 
     // Private helper methods
@@ -247,7 +263,6 @@ public class API_Methods {
         System.out.println("Deleted Course ID in response: " + deletedId);
         System.out.println("Expected ID: " + id);
 
-        Assert.assertEquals("Deleted Course ID doesn't match!",
-                String.valueOf(id), deletedId);
+        Assert.assertEquals(deletedId, String.valueOf(id), "Deleted Course ID doesn't match!");
     }
 }

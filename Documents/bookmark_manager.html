@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QA Test Site Listem</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        .site-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; margin-top: 20px; }
+        .site-btn { padding: 12px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; text-align: left; font-size: 14px; }
+        .site-btn:hover { background: #45a049; }
+        .add-form { margin: 20px 0; padding: 15px; background: #e9e9e9; border-radius: 5px; }
+        input { padding: 8px; width: 70%; margin-right: 10px; }
+        button { padding: 8px 15px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1> QA Test Site Kutuphanem</h1>
+
+    <div class="add-form">
+        <input type="text" id="siteName" placeholder="Site Adi (orn: Automation Practice)">
+        <input type="text" id="siteUrl" placeholder="URL (orn: https://automationpractice.com)">
+        <button onclick="addSite()">+ Site Ekle</button>
+    </div>
+
+    <div class="site-list" id="siteContainer">
+        <!-- Site butonları buraya eklenecek -->
+    </div>
+</div>
+
+<script>
+    // Başlangıçtaki örnek siteler
+    let sites = [
+        { name: "Automation Practice", url: "https://automationpractice.com" },
+        { name: "Swagger Petstore", url: "https://petstore.swagger.io" },
+        { name: "The Internet", url: "https://the-internet.herokuapp.com" },
+        { name: "DemoQA", url: "https://demoqa.com" },
+        { name: "Practice Pending", url: "https://practicesoftwaretesting.com" },
+        { name :"paracticePending", url: "https://practice.expandtesting.com"}
+    ];
+
+    function renderSites() {
+        const container = document.getElementById('siteContainer');
+        container.innerHTML = '';
+        sites.forEach((site, index) => {
+            const button = document.createElement('button');
+            button.className = 'site-btn';
+            button.innerHTML = `${site.name}<br><small>${site.url}</small>`;
+            button.onclick = () => window.open(site.url, '_blank');
+
+            // Silme butonu ekle
+            const deleteBtn = document.createElement('button');
+            deleteBtn.innerHTML = 'X';
+            deleteBtn.style.marginLeft = '10px';
+            deleteBtn.style.background = 'red';
+            deleteBtn.style.color = 'white';
+            deleteBtn.style.border = 'none';
+            deleteBtn.style.padding = '2px 8px';
+            deleteBtn.style.borderRadius = '3px';
+            deleteBtn.onclick = (e) => {
+                e.stopPropagation();
+                sites.splice(index, 1);
+                renderSites();
+                saveToLocalStorage();
+            };
+
+            const div = document.createElement('div');
+            div.appendChild(button);
+            div.appendChild(deleteBtn);
+            container.appendChild(div);
+        });
+    }
+
+    function addSite() {
+        const name = document.getElementById('siteName').value;
+        const url = document.getElementById('siteUrl').value;
+        if (name && url) {
+            // URL'yi düzgün formatla
+            let formattedUrl = url;
+            if (!url.startsWith('http')) {
+                formattedUrl = 'https://' + url;
+            }
+
+            sites.push({ name, url: formattedUrl });
+            renderSites();
+            saveToLocalStorage();
+
+            // Input'ları temizle
+            document.getElementById('siteName').value = '';
+            document.getElementById('siteUrl').value = '';
+        }
+    }
+
+    function saveToLocalStorage() {
+        localStorage.setItem('qaSites', JSON.stringify(sites));
+    }
+
+    function loadFromLocalStorage() {
+        const saved = localStorage.getItem('qaSites');
+        if (saved) {
+            sites = JSON.parse(saved);
+        }
+    }
+
+    // Sayfa yüklendiğinde çalıştır
+    loadFromLocalStorage();
+    renderSites();
+</script>
+</body>
+</html>
