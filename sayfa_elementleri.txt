@@ -1,0 +1,381 @@
+=== SAYFA ELEMENT ANALİZİ ===
+URL: https://qa.loyalfriendcare.com/en/register
+Toplam Element: 66
+
+================================================================================
+
+
+--- ELEMENT #1 ---
+Tag: html
+Text: LoyalFriendCare
+LoyalFriendCare - Pet Care & Hospital Management & Veterinary
+USER NAME
+E-MAIL ADDRE...
+Basit XPath: //html
+
+--- ELEMENT #2 ---
+Tag: head
+Basit XPath: //head
+
+--- ELEMENT #3 ---
+Tag: meta
+Basit XPath: //meta
+
+--- ELEMENT #4 ---
+Tag: meta
+Basit XPath: //meta
+
+--- ELEMENT #5 ---
+Tag: meta
+Name: viewport
+Basit XPath: //meta
+
+--- ELEMENT #6 ---
+Tag: meta
+Name: description
+Basit XPath: //meta
+
+--- ELEMENT #7 ---
+Tag: meta
+Name: author
+Basit XPath: //meta
+
+--- ELEMENT #8 ---
+Tag: meta
+Name: keywords
+Basit XPath: //meta
+
+--- ELEMENT #9 ---
+Tag: meta
+Name: robots
+Basit XPath: //meta
+
+--- ELEMENT #10 ---
+Tag: meta
+Name: msapplication-TileColor
+Basit XPath: //meta
+
+--- ELEMENT #11 ---
+Tag: meta
+Name: msapplication-TileImage
+Basit XPath: //meta
+
+--- ELEMENT #12 ---
+Tag: meta
+Name: theme-color
+Basit XPath: //meta
+
+--- ELEMENT #13 ---
+Tag: title
+Basit XPath: //title
+
+--- ELEMENT #14 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #15 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #16 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #17 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #18 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #19 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #20 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #21 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #22 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #23 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #24 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #25 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #26 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #27 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #28 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #29 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #30 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #31 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #32 ---
+Tag: link
+Basit XPath: //link
+
+--- ELEMENT #33 ---
+Tag: link
+Class(es): main-stylesheet
+Basit XPath: //link[contains(@class, 'main-stylesheet')]
+CSS Selector: .main-stylesheet
+
+--- ELEMENT #34 ---
+Tag: link
+Class(es): main-stylesheet
+Basit XPath: //link[contains(@class, 'main-stylesheet')]
+CSS Selector: .main-stylesheet
+
+--- ELEMENT #35 ---
+Tag: body
+Class(es): fixed-header
+Text: LoyalFriendCare
+LoyalFriendCare - Pet Care & Hospital Management & Veterinary
+USER NAME
+E-MAIL ADDRE...
+Basit XPath: //body[contains(@class, 'fixed-header')]
+CSS Selector: .fixed-header
+
+--- ELEMENT #36 ---
+Tag: span
+Class(es): display-zero
+Basit XPath: //span[contains(@class, 'display-zero')]
+CSS Selector: .display-zero
+
+--- ELEMENT #37 ---
+Tag: div
+Class(es): login-wrapper
+Text: LoyalFriendCare
+LoyalFriendCare - Pet Care & Hospital Management & Veterinary
+USER NAME
+E-MAIL ADDRE...
+Basit XPath: //div[contains(@class, 'login-wrapper')]
+CSS Selector: .login-wrapper
+
+--- ELEMENT #38 ---
+Tag: div
+Class(es): bg-pic
+Text: LoyalFriendCare
+LoyalFriendCare - Pet Care & Hospital Management & Veterinary
+Basit XPath: //div[contains(@class, 'bg-pic')]
+CSS Selector: .bg-pic
+
+--- ELEMENT #39 ---
+Tag: img
+Class(es): lazy
+Basit XPath: //img[contains(@class, 'lazy')]
+CSS Selector: .lazy
+
+--- ELEMENT #40 ---
+Tag: div
+Class(es): bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20
+Text: LoyalFriendCare
+LoyalFriendCare - Pet Care & Hospital Management & Veterinary
+Basit XPath: //div[contains(@class, 'bg-caption')]
+CSS Selector: .bg-caption.pull-bottom.sm-pull-bottom.text-white.p-l-20.m-b-20
+
+--- ELEMENT #41 ---
+Tag: h2
+Class(es): semi-bold
+Text: LoyalFriendCare
+Basit XPath: //h2[contains(@class, 'semi-bold')]
+CSS Selector: .semi-bold
+
+--- ELEMENT #42 ---
+Tag: p
+Class(es): small
+Text: LoyalFriendCare - Pet Care & Hospital Management & Veterinary
+Basit XPath: //p[contains(@class, 'small')]
+CSS Selector: .small
+
+--- ELEMENT #43 ---
+Tag: div
+Class(es): login-container bg-white
+Text: USER NAME
+E-MAIL ADDRESS
+PASSWORD
+CONFIRM PASSWORD
+Sign Up
+Basit XPath: //div[contains(@class, 'login-container')]
+CSS Selector: .login-container.bg-white
+
+--- ELEMENT #44 ---
+Tag: div
+Class(es): p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40
+Text: USER NAME
+E-MAIL ADDRESS
+PASSWORD
+CONFIRM PASSWORD
+Sign Up
+Basit XPath: //div[contains(@class, 'p-l-50')]
+CSS Selector: .p-l-50.m-l-20.p-r-50.m-r-20.p-t-50.m-t-30.sm-p-l-15.sm-p-r-15.sm-p-t-40
+
+--- ELEMENT #45 ---
+Tag: img
+Basit XPath: //img
+
+--- ELEMENT #46 ---
+Tag: form
+Class(es): p-t-15
+Text: USER NAME
+E-MAIL ADDRESS
+PASSWORD
+CONFIRM PASSWORD
+Sign Up
+Basit XPath: //form[contains(@class, 'p-t-15')]
+CSS Selector: .p-t-15
+
+--- ELEMENT #47 ---
+Tag: input
+Name: _token
+Basit XPath: //input
+
+--- ELEMENT #48 ---
+Tag: div
+Class(es): form-group form-group-default
+Text: USER NAME
+Basit XPath: //div[contains(@class, 'form-group')]
+CSS Selector: .form-group.form-group-default
+
+--- ELEMENT #49 ---
+Tag: label
+Text: USER NAME
+Basit XPath: //label
+
+--- ELEMENT #50 ---
+Tag: div
+Class(es): controls
+Basit XPath: //div[contains(@class, 'controls')]
+CSS Selector: .controls
+
+--- ELEMENT #51 ---
+Tag: input
+ID: #name
+Class(es): form-control 
+Name: name
+Basit XPath: //input[@id='name'][contains(@class, 'form-control')]
+CSS Selector: #name
+
+--- ELEMENT #52 ---
+Tag: div
+Class(es): form-group form-group-default
+Text: E-MAIL ADDRESS
+Basit XPath: //div[contains(@class, 'form-group')]
+CSS Selector: .form-group.form-group-default
+
+--- ELEMENT #53 ---
+Tag: label
+Text: E-MAIL ADDRESS
+Basit XPath: //label
+
+--- ELEMENT #54 ---
+Tag: div
+Class(es): controls
+Basit XPath: //div[contains(@class, 'controls')]
+CSS Selector: .controls
+
+--- ELEMENT #55 ---
+Tag: input
+ID: #email
+Class(es): form-control 
+Name: email
+Basit XPath: //input[@id='email'][contains(@class, 'form-control')]
+CSS Selector: #email
+
+--- ELEMENT #56 ---
+Tag: div
+Class(es): form-group form-group-default
+Text: PASSWORD
+Basit XPath: //div[contains(@class, 'form-group')]
+CSS Selector: .form-group.form-group-default
+
+--- ELEMENT #57 ---
+Tag: label
+Text: PASSWORD
+Basit XPath: //label
+
+--- ELEMENT #58 ---
+Tag: div
+Class(es): controls
+Basit XPath: //div[contains(@class, 'controls')]
+CSS Selector: .controls
+
+--- ELEMENT #59 ---
+Tag: input
+ID: #password
+Class(es): form-control 
+Name: password
+Basit XPath: //input[@id='password'][contains(@class, 'form-control')]
+CSS Selector: #password
+
+--- ELEMENT #60 ---
+Tag: div
+Class(es): form-group form-group-default
+Text: CONFIRM PASSWORD
+Basit XPath: //div[contains(@class, 'form-group')]
+CSS Selector: .form-group.form-group-default
+
+--- ELEMENT #61 ---
+Tag: label
+Text: CONFIRM PASSWORD
+Basit XPath: //label
+
+--- ELEMENT #62 ---
+Tag: div
+Class(es): controls
+Basit XPath: //div[contains(@class, 'controls')]
+CSS Selector: .controls
+
+--- ELEMENT #63 ---
+Tag: input
+ID: #password-confirm
+Class(es): form-control
+Name: password_confirmation
+Basit XPath: //input[@id='password-confirm'][contains(@class, 'form-control')]
+CSS Selector: #password-confirm
+
+--- ELEMENT #64 ---
+Tag: button
+Class(es): btn btn-primary btn-cons m-t-10
+Text: Sign Up
+Basit XPath: //button[contains(@class, 'btn')]
+CSS Selector: .btn.btn-primary.btn-cons.m-t-10
+
+--- ELEMENT #65 ---
+Tag: script
+Basit XPath: //script
+
+--- ELEMENT #66 ---
+Tag: script
+Basit XPath: //script
