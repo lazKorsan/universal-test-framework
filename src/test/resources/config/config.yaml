@@ -1,7 +1,7 @@
 aapiAhmet:
   base_url: "https://qa.instulearn.com"
-  adminEmail: "ahmet@instulearn.com"
-  adminPassword: "Instu2025!"
+  adminEmail: "162.admin@instulearn.com"
+  adminPassword: "162162162"
   unauthorizedExceptionMessage: "status code: 401, reason phrase: Unauthorized"
   invalidToken: "invalid"
 

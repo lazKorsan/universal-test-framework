@@ -1,0 +1,19 @@
+{
+  "name": "mocha-api-framework",
+  "version": "1.0.0",
+  "description": "Java RestAssured yapısının JS/Mocha uyarlaması",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha 'test/**/*.js' --timeout 10000",
+    "test:cucumber": "npx cucumber-js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0"
+  }
+}

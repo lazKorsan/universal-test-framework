@@ -13,6 +13,8 @@ import static io.restassured.RestAssured.given;
 public class Authentication{
 
     static ConfigLoader configLoader = new ConfigLoader();
+    private static final String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
+
     public static String generateToken() {
 
         RequestSpecification spec = new RequestSpecBuilder().setBaseUri(configLoader.getApiConfig("base_url")).build();
@@ -28,10 +30,14 @@ public class Authentication{
                 .contentType(ContentType.JSON)
                 .header("Accept", "application/json")
                 .header("x-api-key", "1234")
+                .header("User-Agent", USER_AGENT) // User-Agent eklendi
                 .when()
                 .body(reqBody.toString())
                 .post("/{pp1}/{pp2}");
 
+        // Hata ayıklama için response'u yazdır
+        System.out.println("Authentication Response Status Code: " + response.getStatusCode());
+        response.prettyPrint();
 
         JsonPath repJP = response.jsonPath();
 

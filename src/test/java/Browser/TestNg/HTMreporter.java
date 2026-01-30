@@ -10,11 +10,13 @@ import java.io.IOException;
 public class HTMreporter {
 
     @Test
-    public void testHTMreport() throws IOException {
+    public void testHTMreport() throws IOException, InterruptedException {
 
-        String url = "https://qa.loyalfriendcare.com/en/register";
+        String url = "https://querycart.com/#/signup";
 
         Driver.getDriver().get(url);
+
+        Thread.sleep(9000);
 
         // Sayfanın HTML kaynağını al
         String pageSource = Driver.getDriver().getPageSource();
