@@ -19,7 +19,7 @@ public class AdvancedElementExplorer {
 
             // Scanner konsol girdisi beklediği için test takılı kalıyordu.
             // URL doğrudan tanımlandı.
-            String url = "https://qa.loyalfriendcare.com/en/register";
+            String url = "https://querycart.com/#/signup";
 
             Driver.getDriver().get(url);
 

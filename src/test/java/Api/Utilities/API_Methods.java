@@ -18,6 +18,7 @@ public class API_Methods {
     public static int id;
     public static HashMap<String, Object> responseMap;
     private static PathParamValidator validator;
+    private static final String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
     // ==================== PATH PARAM METHODS ====================
 
@@ -100,7 +101,9 @@ public class API_Methods {
     }
 
     private static io.restassured.specification.RequestSpecification buildRequest(Object requestBody) {
-        io.restassured.specification.RequestSpecification request = given().spec(spec);
+        io.restassured.specification.RequestSpecification request = given()
+                .spec(spec)
+                .header("User-Agent", USER_AGENT);
 
         if (requestBody != null) {
             request.contentType(ContentType.JSON).body(requestBody);
