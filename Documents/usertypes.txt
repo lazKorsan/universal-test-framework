@@ -1,0 +1,34 @@
+browser=chrome
+Url=https://www.legalife.fr/
+email=fildisili8888@outlook.com
+password=fildisili88
+invalidPassword=paris43
+
+https://github.com/hakantetik44/UnLatchFrameWork
+
+https://github.com/hakantetik44/LuckyCartApiAndFrontEnd/blob/main/src/test/java/utilities/ApiUtility.java
+
+
+
+
+
+https://www.alltricks.com/
+automationName = UiAutomator2
+platformName = Android
+platformVersion = 11.0
+deviceName = PIXEL
+browser = Chrome
+Url = https://www.alltricks.fr/
+email=kawahij721@vingood.com
+gecersizEmail=alttricks.fr
+Password=123456
+
+
+
+
+https://github.com/Ovi/DummyJSON   *****  ornek framework
+
+
+https://github.com/Ovi?tab=repositories
+
+
