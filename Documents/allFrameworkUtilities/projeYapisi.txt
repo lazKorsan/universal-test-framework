@@ -1,0 +1,30 @@
+project/
+│
+├── python/
+│   ├── click_utils.py
+│   ├── sendkey_utils.py
+│   └── tests/
+│       ├── test_*.py
+│       └── robot_tests/
+│
+├── java/
+│   ├── src/main/java/utils/
+│   │   ├── ClickUtils.java
+│   │   └── SendKeyUtils.java
+│   └── src/test/java/
+│       ├── junit/
+│       ├── testng/
+│       └── features/ (cucumber)
+│
+├── javascript/
+│   ├── playwright/
+│   │   ├── clickUtils.js
+│   │   ├── sendKeyUtils.js
+│   │   └── tests/
+│   ├── mocha/
+│   └── jest/
+│
+└── cypress/
+    ├── cypressClickUtils.js
+    ├── cypressSendKeyUtils.js
+    └── e2e/
