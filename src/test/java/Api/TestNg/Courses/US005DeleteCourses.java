@@ -24,7 +24,7 @@ public class US005DeleteCourses {
         // "Successfully Deleted." oldugu dogrulanmali.
 
         HooksAPI.setUpApi("admin");
-        API_Methods.pathParam("api/deleteCourse/1998");
+        API_Methods.pathParam("api/deleteCourse/3973");
 
         API_Methods.sendRequest("DELETE", null);
 
@@ -295,6 +295,8 @@ public class US005DeleteCourses {
             }
         }
     }
+
+
 
 
 

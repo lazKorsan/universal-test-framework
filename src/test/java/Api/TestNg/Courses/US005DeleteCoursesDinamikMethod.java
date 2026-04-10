@@ -247,7 +247,7 @@ public class US005DeleteCoursesDinamikMethod {
     public void testWithHardcodedId() {
         System.out.println("=== HARD-CODED ID İLE TEST ===");
 
-        int courseId = 3390; // Hard-coded ID
+        int courseId = 3982; // Hard-coded ID
 
         // DELETE
         HooksAPI.setUpApi("admin");
