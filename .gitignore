@@ -43,3 +43,6 @@ build/
 
 ###trello_package###
 src/main/java/trello/trelloPage.java
+
+###resourceTrelloPacge###
+src/resources/trello
