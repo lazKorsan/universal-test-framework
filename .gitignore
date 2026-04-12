@@ -40,3 +40,6 @@ build/
 
 ###node_modules###
 /node_modules
+
+###trello_package###
+src/main/java/trello/trelloPage.java
