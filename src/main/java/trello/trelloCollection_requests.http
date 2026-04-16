@@ -1,0 +1,1373 @@
+###
+GET https://api.trello.com/1/actions/{{id}}?
+    display={{$placeholder}}&
+    entities={{$placeholder}}&
+    fields={{$placeholder}}&
+    member={{$placeholder}}&
+    member_fields={{$placeholder}}&
+    memberCreator={{$placeholder}}&
+    memberCreator_fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/actions/{{id}}?
+    text={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/actions/{{id}}
+
+###
+GET https://api.trello.com/1/actions/{{id}}/{{field}}?
+    fields={{$placeholder}}&
+    member={{$placeholder}}&
+    emoji={{$placeholder}}
+
+###
+GET https://api.trello.com/1/actions/{{id}}/board?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/actions/{{id}}/card?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/actions/{{id}}/list?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/actions/{{id}}/member?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/actions/{{id}}/memberCreator?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/actions/{{id}}/organization?
+    fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/actions/{{id}}/text?
+    value={{$placeholder}}
+
+###
+GET https://api.trello.com/1/actions/{{idAction}}/reactions?
+    member={{$placeholder}}&
+    emoji={{$placeholder}}
+
+###
+POST https://api.trello.com/1/actions/{{idAction}}/reactions
+Content-Type: application/json
+
+{
+  "shortName": "",
+  "skinVariation": "",
+  "native": "",
+  "unified": ""
+}
+
+###
+GET https://api.trello.com/1/actions/{{idAction}}/reactions/{{id}}?
+    member={{$placeholder}}&
+    emoji={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/actions/{{idAction}}/reactions/{{id}}
+
+###
+GET https://api.trello.com/1/actions/{{idAction}}/reactionsSummary
+
+###
+GET https://api.trello.com/1/applications/{{key}}/compliance
+
+###
+GET https://api.trello.com/1/batch?
+    urls={{$placeholder}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/memberships?
+    filter={{$placeholder}}&
+    activity={{$placeholder}}&
+    orgMemberType={{$placeholder}}&
+    member={{$placeholder}}&
+    member_fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}?
+    actions={{$placeholder}}&
+    boardStars={{$placeholder}}&
+    cards={{$placeholder}}&
+    card_pluginData={{$placeholder}}&
+    checklists={{$placeholder}}&
+    customFields={{$placeholder}}&
+    fields={{$placeholder}}&
+    labels={{$placeholder}}&
+    lists={{$placeholder}}&
+    members={{$placeholder}}&
+    memberships={{$placeholder}}&
+    pluginData={{$placeholder}}&
+    organization={{$placeholder}}&
+    organization_pluginData={{$placeholder}}&
+    myPrefs={{$placeholder}}&
+    tags={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}?
+    name={{$placeholder}}&
+    desc={{$placeholder}}&
+    closed={{$placeholder}}&
+    subscribed={{$placeholder}}&
+    idOrganization={{$placeholder}}&
+    prefs/permissionLevel={{$placeholder}}&
+    prefs/selfJoin={{$placeholder}}&
+    prefs/cardCovers={{$placeholder}}&
+    prefs/hideVotes={{$placeholder}}&
+    prefs/invitations={{$placeholder}}&
+    prefs/voting={{$placeholder}}&
+    prefs/comments={{$placeholder}}&
+    prefs/background={{$placeholder}}&
+    prefs/cardAging={{$placeholder}}&
+    prefs/calendarFeedEnabled={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/boards/{{id}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/{{field}}?
+    filter={{$placeholder}}&
+    activity={{$placeholder}}&
+    orgMemberType={{$placeholder}}&
+    member={{$placeholder}}&
+    member_fields={{$placeholder}}&
+    cards={{$placeholder}}&
+    card_fields={{$placeholder}}&
+    fields={{$placeholder}}&
+    format={{$placeholder}}&
+    idModels={{$placeholder}}&
+    limit={{$placeholder}}&
+    memberCreator={{$placeholder}}&
+    memberCreator_fields={{$placeholder}}&
+    page={{$placeholder}}&
+    reactions={{$placeholder}}&
+    before={{$placeholder}}&
+    since={{$placeholder}}
+
+###
+GET https://api.trello.com/1/boards/{{boardId}}/actions?
+    fields={{$placeholder}}&
+    filter={{$placeholder}}&
+    format={{$placeholder}}&
+    idModels={{$placeholder}}&
+    limit={{$placeholder}}&
+    member={{$placeholder}}&
+    member_fields={{$placeholder}}&
+    memberCreator={{$placeholder}}&
+    memberCreator_fields={{$placeholder}}&
+    page={{$placeholder}}&
+    reactions={{$placeholder}}&
+    before={{$placeholder}}&
+    since={{$placeholder}}
+
+###
+GET https://api.trello.com/1/boards/{{boardId}}/boardStars?
+    filter={{$placeholder}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/checklists
+
+###
+GET https://api.trello.com/1/boards/{{id}}/cards
+
+###
+GET https://api.trello.com/1/boards/{{id}}/cards/{{filter}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/customFields
+
+###
+GET https://api.trello.com/1/boards/{{id}}/labels?
+    fields={{$placeholder}}&
+    limit={{$placeholder}}
+
+###
+POST https://api.trello.com/1/boards/{{id}}/labels?
+    name={{$placeholder}}&
+    color={{$placeholder}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/lists?
+    cards={{$placeholder}}&
+    card_fields={{$placeholder}}&
+    filter={{$placeholder}}&
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/boards/{{id}}/lists?
+    name={{$placeholder}}&
+    pos={{$placeholder}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/lists/{{filter}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/members
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/members?
+    email={{$placeholder}}&
+    type={{$placeholder}}
+    Content-Type: application/json
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/members/{{idMember}}?
+    type={{$placeholder}}&
+    allowBillableGuest={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/boards/{{id}}/members/{{idMember}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/memberships/{{idMembership}}?
+    type={{$placeholder}}&
+    member_fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/myPrefs/emailPosition?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/myPrefs/idEmailList?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/myPrefs/showSidebar?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/myPrefs/showSidebarActivity?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/myPrefs/showSidebarBoardActions?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/boards/{{id}}/myPrefs/showSidebarMembers?
+    value={{$placeholder}}
+
+###
+POST https://api.trello.com/1/boards/?
+    name={{$placeholder}}&
+    defaultLabels={{$placeholder}}&
+    defaultLists={{$placeholder}}&
+    desc={{$placeholder}}&
+    idOrganization={{$placeholder}}&
+    idBoardSource={{$placeholder}}&
+    keepFromSource={{$placeholder}}&
+    powerUps={{$placeholder}}&
+    prefs_permissionLevel={{$placeholder}}&
+    prefs_voting={{$placeholder}}&
+    prefs_comments={{$placeholder}}&
+    prefs_invitations={{$placeholder}}&
+    prefs_selfJoin={{$placeholder}}&
+    prefs_cardCovers={{$placeholder}}&
+    prefs_background={{$placeholder}}&
+    prefs_cardAging={{$placeholder}}
+
+###
+POST https://api.trello.com/1/boards/{{id}}/calendarKey/generate
+
+###
+POST https://api.trello.com/1/boards/{{id}}/emailKey/generate
+
+###
+POST https://api.trello.com/1/boards/{{id}}/idTags?
+    value={{$placeholder}}
+
+###
+POST https://api.trello.com/1/boards/{{id}}/markedAsViewed
+
+###
+GET https://api.trello.com/1/boards/{{id}}/boardPlugins
+
+###
+POST https://api.trello.com/1/boards/{{id}}/boardPlugins?
+    idPlugin={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/boards/{{id}}/boardPlugins/{{idPlugin}}
+
+###
+GET https://api.trello.com/1/boards/{{id}}/plugins?
+    filter={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards?
+    name={{$placeholder}}&
+    desc={{$placeholder}}&
+    pos={{$placeholder}}&
+    due={{$placeholder}}&
+    start={{$placeholder}}&
+    dueComplete={{$placeholder}}&
+    idList={{$placeholder}}&
+    idMembers={{$placeholder}}&
+    idLabels={{$placeholder}}&
+    urlSource={{$placeholder}}&
+    fileSource={{$placeholder}}&
+    mimeType={{$placeholder}}&
+    idCardSource={{$placeholder}}&
+    keepFromSource={{$placeholder}}&
+    address={{$placeholder}}&
+    locationName={{$placeholder}}&
+    coordinates={{$placeholder}}&
+    cardRole={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}?
+    fields={{$placeholder}}&
+    actions={{$placeholder}}&
+    attachments={{$placeholder}}&
+    attachment_fields={{$placeholder}}&
+    members={{$placeholder}}&
+    member_fields={{$placeholder}}&
+    membersVoted={{$placeholder}}&
+    memberVoted_fields={{$placeholder}}&
+    checkItemStates={{$placeholder}}&
+    checklists={{$placeholder}}&
+    checklist_fields={{$placeholder}}&
+    board={{$placeholder}}&
+    board_fields={{$placeholder}}&
+    list={{$placeholder}}&
+    pluginData={{$placeholder}}&
+    stickers={{$placeholder}}&
+    sticker_fields={{$placeholder}}&
+    customFieldItems={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/cards/{{id}}?
+    name={{$placeholder}}&
+    desc={{$placeholder}}&
+    closed={{$placeholder}}&
+    idMembers={{$placeholder}}&
+    idAttachmentCover={{$placeholder}}&
+    idList={{$placeholder}}&
+    idLabels={{$placeholder}}&
+    idBoard={{$placeholder}}&
+    pos={{$placeholder}}&
+    due={{$placeholder}}&
+    start={{$placeholder}}&
+    dueComplete={{$placeholder}}&
+    subscribed={{$placeholder}}&
+    address={{$placeholder}}&
+    locationName={{$placeholder}}&
+    coordinates={{$placeholder}}&
+    cover={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/{{field}}?
+    checkItems={{$placeholder}}&
+    checkItem_fields={{$placeholder}}&
+    filter={{$placeholder}}&
+    fields={{$placeholder}}&
+    page={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/actions?
+    filter={{$placeholder}}&
+    page={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/attachments?
+    fields={{$placeholder}}&
+    filter={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/attachments?
+    name={{$placeholder}}&
+    file={{$placeholder}}&
+    mimeType={{$placeholder}}&
+    url={{$placeholder}}&
+    setCover={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/attachments/{{idAttachment}}?
+    fields={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/attachments/{{idAttachment}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/board?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/checkItemStates?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/checklists?
+    checkItems={{$placeholder}}&
+    checkItem_fields={{$placeholder}}&
+    filter={{$placeholder}}&
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/checklists?
+    name={{$placeholder}}&
+    idChecklistSource={{$placeholder}}&
+    pos={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/checkItem/{{idCheckItem}}?
+    fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/cards/{{id}}/checkItem/{{idCheckItem}}?
+    name={{$placeholder}}&
+    state={{$placeholder}}&
+    idChecklist={{$placeholder}}&
+    pos={{$placeholder}}&
+    due={{$placeholder}}&
+    dueReminder={{$placeholder}}&
+    idMember={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/checkItem/{{idCheckItem}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/list?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/members?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/membersVoted?
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/membersVoted?
+    value={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/pluginData
+
+###
+GET https://api.trello.com/1/cards/{{id}}/stickers?
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/stickers?
+    image={{$placeholder}}&
+    top={{$placeholder}}&
+    left={{$placeholder}}&
+    zIndex={{$placeholder}}&
+    rotate={{$placeholder}}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/stickers/{{idSticker}}?
+    fields={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/stickers/{{idSticker}}
+
+###
+PUT https://api.trello.com/1/cards/{{id}}/stickers/{{idSticker}}?
+    top={{$placeholder}}&
+    left={{$placeholder}}&
+    zIndex={{$placeholder}}&
+    rotate={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/cards/{{id}}/actions/{{idAction}}/comments?
+    text={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/actions/{{idAction}}/comments
+
+###
+PUT https://api.trello.com/1/cards/{{idCard}}/customField/{{idCustomField}}/item
+Content-Type: application/json
+
+{
+
+}
+
+###
+PUT https://api.trello.com/1/cards/{{idCard}}/customFields
+Content-Type: application/json
+
+{
+  "customFieldItems": []
+}
+
+###
+GET https://api.trello.com/1/cards/{{id}}/customFieldItems
+
+###
+POST https://api.trello.com/1/cards/{{id}}/actions/comments?
+    text={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/idLabels?
+    value={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/idMembers?
+    value={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/labels?
+    color={{$placeholder}}&
+    name={{$placeholder}}
+
+###
+POST https://api.trello.com/1/cards/{{id}}/markAssociatedNotificationsRead
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/idLabels/{{idLabel}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/idMembers/{{idMember}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/membersVoted/{{idMember}}
+
+###
+PUT https://api.trello.com/1/cards/{{idCard}}/checklist/{{idChecklist}}/checkItem/{{idCheckItem}}?
+    pos={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/cards/{{id}}/checklists/{{idChecklist}}
+
+###
+POST https://api.trello.com/1/checklists?
+    idCard={{$placeholder}}&
+    name={{$placeholder}}&
+    pos={{$placeholder}}&
+    idChecklistSource={{$placeholder}}
+
+###
+GET https://api.trello.com/1/checklists/{{id}}?
+    cards={{$placeholder}}&
+    checkItems={{$placeholder}}&
+    checkItem_fields={{$placeholder}}&
+    fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/checklists/{{id}}?
+    name={{$placeholder}}&
+    pos={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/checklists/{{id}}
+
+###
+GET https://api.trello.com/1/checklists/{{id}}/{{field}}?
+    filter={{$placeholder}}&
+    fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/checklists/{{id}}/{{field}}?
+    value={{$placeholder}}
+
+###
+GET https://api.trello.com/1/checklists/{{id}}/board?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/checklists/{{id}}/cards
+
+###
+GET https://api.trello.com/1/checklists/{{id}}/checkItems?
+    filter={{$placeholder}}&
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/checklists/{{id}}/checkItems?
+    name={{$placeholder}}&
+    pos={{$placeholder}}&
+    checked={{$placeholder}}&
+    due={{$placeholder}}&
+    dueReminder={{$placeholder}}&
+    idMember={{$placeholder}}
+
+###
+GET https://api.trello.com/1/checklists/{{id}}/checkItems/{{idCheckItem}}?
+    fields={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/checklists/{{id}}/checkItems/{{idCheckItem}}
+
+###
+POST https://api.trello.com/1/customFields
+Content-Type: application/json
+
+{
+  "idModel": {},
+  "modelType": "",
+  "name": "",
+  "type": "",
+  "options": "",
+  "pos": {},
+  "display_cardFront": false
+}
+
+###
+GET https://api.trello.com/1/customFields/{{id}}
+
+###
+PUT https://api.trello.com/1/customFields/{{id}}
+Content-Type: application/json
+
+{
+  "name": "",
+  "pos": {},
+  "display/cardFront": false
+}
+
+###
+DELETE https://api.trello.com/1/customFields/{{id}}
+
+###
+POST https://api.trello.com/1/customFields/{{id}}/options
+
+###
+GET https://api.trello.com/1/customFields/{{id}}/options
+
+###
+GET https://api.trello.com/1/customFields/{{id}}/options/{{idCustomFieldOption}}
+
+###
+DELETE https://api.trello.com/1/customFields/{{id}}/options/{{idCustomFieldOption}}
+
+###
+GET https://api.trello.com/1/emoji?
+    locale={{$placeholder}}&
+    spritesheets={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}?
+    fields={{$placeholder}}&
+    members={{$placeholder}}&
+    member_fields={{$placeholder}}&
+    member_filter={{$placeholder}}&
+    member_sort={{$placeholder}}&
+    member_sortBy={{$placeholder}}&
+    member_sortOrder={{$placeholder}}&
+    member_startIndex={{$placeholder}}&
+    member_count={{$placeholder}}&
+    organizations={{$placeholder}}&
+    organization_fields={{$placeholder}}&
+    organization_paid_accounts={{$placeholder}}&
+    organization_memberships={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/auditlog
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/admins?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/signupUrl?
+    authenticate={{$placeholder}}&
+    confirmationAccepted={{$placeholder}}&
+    returnUrl={{$placeholder}}&
+    tosAccepted={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/members/query?
+    licensed={{$placeholder}}&
+    deactivated={{$placeholder}}&
+    collaborator={{$placeholder}}&
+    managed={{$placeholder}}&
+    admin={{$placeholder}}&
+    activeSince={{$placeholder}}&
+    inactiveSince={{$placeholder}}&
+    search={{$placeholder}}&
+    cursor={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/members?
+    fields={{$placeholder}}&
+    filter={{$placeholder}}&
+    sort={{$placeholder}}&
+    sortBy={{$placeholder}}&
+    sortOrder={{$placeholder}}&
+    startIndex={{$placeholder}}&
+    count={{$placeholder}}&
+    organization_fields={{$placeholder}}&
+    board_fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/members/{{idMember}}?
+    licensed={{$placeholder}}&
+    deactivated={{$placeholder}}&
+    collaborator={{$placeholder}}&
+    managed={{$placeholder}}&
+    admin={{$placeholder}}&
+    activeSince={{$placeholder}}&
+    inactiveSince={{$placeholder}}&
+    search={{$placeholder}}&
+    cursor={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/transferrable/organization/{{idOrganization}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/transferrable/bulk/{{idOrganizations}}
+
+###
+PUT https://api.trello.com/1/enterprises/${{id}}/enterpriseJoinRequest/bulk?
+    idOrganizations={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/claimableOrganizations?
+    limit={{$placeholder}}&
+    cursor={{$placeholder}}&
+    name={{$placeholder}}&
+    activeSince={{$placeholder}}&
+    inactiveSince={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/pendingOrganizations?
+    activeSince={{$placeholder}}&
+    inactiveSince={{$placeholder}}
+
+###
+POST https://api.trello.com/1/enterprises/{{id}}/tokens?
+    expiration={{$placeholder}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/organizations?
+    fields={{$placeholder}}&
+    filter={{$placeholder}}&
+    startIndex={{$placeholder}}&
+    count={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/enterprises/{{id}}/organizations?
+    idOrganization={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/enterprises/{{id}}/members/{{idMember}}/licensed?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/enterprises/{{id}}/members/{{idMember}}/deactivated?
+    value={{$placeholder}}&
+    fields={{$placeholder}}&
+    organization_fields={{$placeholder}}&
+    board_fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/enterprises/{{id}}/admins/{{idMember}}
+
+###
+DELETE https://api.trello.com/1/enterprises/{{id}}/admins/{{idMember}}
+
+###
+DELETE https://api.trello.com/1/enterprises/{{id}}/organizations/{{idOrg}}
+
+###
+GET https://api.trello.com/1/enterprises/{{id}}/organizations/bulk/{{idOrganizations}}
+
+###
+GET https://api.trello.com/1/labels/{{id}}?
+    fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/labels/{{id}}?
+    name={{$placeholder}}&
+    color={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/labels/{{id}}
+
+###
+PUT https://api.trello.com/1/labels/{{id}}/{{field}}?
+    value={{$placeholder}}
+
+###
+POST https://api.trello.com/1/labels?
+    name={{$placeholder}}&
+    color={{$placeholder}}&
+    idBoard={{$placeholder}}
+
+###
+GET https://api.trello.com/1/lists/{{id}}?
+    fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/lists/{{id}}?
+    name={{$placeholder}}&
+    closed={{$placeholder}}&
+    idBoard={{$placeholder}}&
+    pos={{$placeholder}}&
+    subscribed={{$placeholder}}
+
+###
+POST https://api.trello.com/1/lists?
+    name={{$placeholder}}&
+    idBoard={{$placeholder}}&
+    idListSource={{$placeholder}}&
+    pos={{$placeholder}}
+
+###
+POST https://api.trello.com/1/lists/{{id}}/archiveAllCards
+
+###
+POST https://api.trello.com/1/lists/{{id}}/moveAllCards?
+    idBoard={{$placeholder}}&
+    idList={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/lists/{{id}}/closed?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/lists/{{id}}/idBoard?
+    value={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/lists/{{id}}/{{field}}?
+    value={{$placeholder}}
+
+###
+GET https://api.trello.com/1/lists/{{id}}/actions?
+    filter={{$placeholder}}
+
+###
+GET https://api.trello.com/1/lists/{{id}}/board?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/lists/{{id}}/cards
+
+###
+GET https://api.trello.com/1/members/{{id}}?
+    actions={{$placeholder}}&
+    boards={{$placeholder}}&
+    boardBackgrounds={{$placeholder}}&
+    boardsInvited={{$placeholder}}&
+    boardsInvited_fields={{$placeholder}}&
+    boardStars={{$placeholder}}&
+    cards={{$placeholder}}&
+    customBoardBackgrounds={{$placeholder}}&
+    customEmoji={{$placeholder}}&
+    customStickers={{$placeholder}}&
+    fields={{$placeholder}}&
+    notifications={{$placeholder}}&
+    organizations={{$placeholder}}&
+    organization_fields={{$placeholder}}&
+    organization_paid_account={{$placeholder}}&
+    organizationsInvited={{$placeholder}}&
+    organizationsInvited_fields={{$placeholder}}&
+    paid_account={{$placeholder}}&
+    savedSearches={{$placeholder}}&
+    tokens={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/members/{{id}}?
+    fullName={{$placeholder}}&
+    initials={{$placeholder}}&
+    username={{$placeholder}}&
+    bio={{$placeholder}}&
+    avatarSource={{$placeholder}}&
+    prefs/colorBlind={{$placeholder}}&
+    prefs/locale={{$placeholder}}&
+    prefs/minutesBetweenSummaries={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/{{field}}?
+    entities={{$placeholder}}&
+    display={{$placeholder}}&
+    filter={{$placeholder}}&
+    read_filter={{$placeholder}}&
+    fields={{$placeholder}}&
+    limit={{$placeholder}}&
+    page={{$placeholder}}&
+    before={{$placeholder}}&
+    since={{$placeholder}}&
+    memberCreator={{$placeholder}}&
+    memberCreator_fields={{$placeholder}}&
+    paid_account={{$placeholder}}&
+    webhooks={{$placeholder}}&
+    lists={{$placeholder}}&
+    organization={{$placeholder}}&
+    organization_fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/actions?
+    filter={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/boardBackgrounds?
+    filter={{$placeholder}}
+
+###
+POST https://api.trello.com/1/members/{{id}}/boardBackgrounds?
+    file={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/boardBackgrounds/{{idBackground}}?
+    fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/members/{{id}}/boardBackgrounds/{{idBackground}}?
+    brightness={{$placeholder}}&
+    tile={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/members/{{id}}/boardBackgrounds/{{idBackground}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/boardStars
+
+###
+POST https://api.trello.com/1/members/{{id}}/boardStars?
+    idBoard={{$placeholder}}&
+    pos={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/boardStars/{{idStar}}
+
+###
+PUT https://api.trello.com/1/members/{{id}}/boardStars/{{idStar}}?
+    pos={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/members/{{id}}/boardStars/{{idStar}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/boards?
+    filter={{$placeholder}}&
+    fields={{$placeholder}}&
+    lists={{$placeholder}}&
+    organization={{$placeholder}}&
+    organization_fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/boardsInvited?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/cards?
+    filter={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/customBoardBackgrounds
+
+###
+POST https://api.trello.com/1/members/{{id}}/customBoardBackgrounds?
+    file={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/customBoardBackgrounds/{{idBackground}}
+
+###
+PUT https://api.trello.com/1/members/{{id}}/customBoardBackgrounds/{{idBackground}}?
+    brightness={{$placeholder}}&
+    tile={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/members/{{id}}/customBoardBackgrounds/{{idBackground}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/customEmoji
+
+###
+POST https://api.trello.com/1/members/{{id}}/customEmoji?
+    file={{$placeholder}}&
+    name={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/customEmoji/{{idEmoji}}?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/customStickers
+
+###
+POST https://api.trello.com/1/members/{{id}}/customStickers?
+    file={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/customStickers/{{idSticker}}?
+    fields={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/members/{{id}}/customStickers/{{idSticker}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/notifications?
+    entities={{$placeholder}}&
+    display={{$placeholder}}&
+    filter={{$placeholder}}&
+    read_filter={{$placeholder}}&
+    fields={{$placeholder}}&
+    limit={{$placeholder}}&
+    page={{$placeholder}}&
+    before={{$placeholder}}&
+    since={{$placeholder}}&
+    memberCreator={{$placeholder}}&
+    memberCreator_fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/organizations?
+    filter={{$placeholder}}&
+    fields={{$placeholder}}&
+    paid_account={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/organizationsInvited?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/savedSearches
+
+###
+POST https://api.trello.com/1/members/{{id}}/savedSearches?
+    name={{$placeholder}}&
+    query={{$placeholder}}&
+    pos={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/savedSearches/{{idSearch}}
+
+###
+PUT https://api.trello.com/1/members/{{id}}/savedSearches/{{idSearch}}?
+    name={{$placeholder}}&
+    query={{$placeholder}}&
+    pos={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/members/{{id}}/savedSearches/{{idSearch}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/tokens?
+    webhooks={{$placeholder}}
+
+###
+POST https://api.trello.com/1/members/{{id}}/avatar?
+    file={{$placeholder}}
+
+###
+POST https://api.trello.com/1/members/{{id}}/oneTimeMessagesDismissed?
+    value={{$placeholder}}
+
+###
+GET https://api.trello.com/1/members/{{id}}/notificationsChannelSettings
+
+###
+PUT https://api.trello.com/1/members/{{id}}/notificationsChannelSettings
+Content-Type: application/json
+
+{
+  "channel": "",
+  "blockedKeys": {}
+}
+
+###
+GET https://api.trello.com/1/members/{{id}}/notificationsChannelSettings/{{channel}}
+
+###
+PUT https://api.trello.com/1/members/{{id}}/notificationsChannelSettings/{{channel}}
+Content-Type: application/json
+
+{
+  "blockedKeys": {}
+}
+
+###
+PUT https://api.trello.com/1/members/{{id}}/notificationsChannelSettings/{{channel}}/{{blockedKeys}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}?
+    board={{$placeholder}}&
+    board_fields={{$placeholder}}&
+    card={{$placeholder}}&
+    card_fields={{$placeholder}}&
+    display={{$placeholder}}&
+    entities={{$placeholder}}&
+    fields={{$placeholder}}&
+    list={{$placeholder}}&
+    member={{$placeholder}}&
+    member_fields={{$placeholder}}&
+    memberCreator={{$placeholder}}&
+    memberCreator_fields={{$placeholder}}&
+    organization={{$placeholder}}&
+    organization_fields={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/notifications/{{id}}?
+    unread={{$placeholder}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}/{{field}}?
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/notifications/all/read?
+    read={{$placeholder}}&
+    ids={{$placeholder}}
+
+###
+PUT https://api.trello.com/1/notifications/{{id}}/unread?
+    value={{$placeholder}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}/board?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}/card?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}/list?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}/member?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}/memberCreator?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/notifications/{{id}}/organization?
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/organizations?
+    displayName={{$placeholder}}&
+    desc={{$placeholder}}&
+    name={{$placeholder}}&
+    website={{$placeholder}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}
+
+###
+PUT https://api.trello.com/1/organizations/{{id}}?
+    name={{$placeholder}}&
+    displayName={{$placeholder}}&
+    desc={{$placeholder}}&
+    website={{$placeholder}}&
+    prefs/associatedDomain={{$placeholder}}&
+    prefs/externalMembersDisabled={{$placeholder}}&
+    prefs/googleAppsVersion={{$placeholder}}&
+    prefs/boardVisibilityRestrict/org={{$placeholder}}&
+    prefs/boardVisibilityRestrict/private={{$placeholder}}&
+    prefs/boardVisibilityRestrict/public={{$placeholder}}&
+    prefs/orgInviteRestrict={{$placeholder}}&
+    prefs/permissionLevel={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/organizations/{{id}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/{{field}}?
+    filter={{$placeholder}}&
+    member={{$placeholder}}&
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/actions
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/boards?
+    filter={{$placeholder}}&
+    fields={{$placeholder}}
+
+###
+POST https://api.trello.com/1/organizations/{{id}}/exports?
+    attachments={{$placeholder}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/exports
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/members
+
+###
+PUT https://api.trello.com/1/organizations/{{id}}/members?
+    email={{$placeholder}}&
+    fullName={{$placeholder}}&
+    type={{$placeholder}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/memberships?
+    filter={{$placeholder}}&
+    member={{$placeholder}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/memberships/{{idMembership}}?
+    member={{$placeholder}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/pluginData
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/tags
+
+###
+POST https://api.trello.com/1/organizations/{{id}}/tags
+
+###
+PUT https://api.trello.com/1/organizations/{{id}}/members/{{idMember}}?
+    type={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/organizations/{{id}}/members/{{idMember}}
+
+###
+PUT https://api.trello.com/1/organizations/{{id}}/members/{{idMember}}/deactivated?
+    value={{$placeholder}}
+
+###
+POST https://api.trello.com/1/organizations/{{id}}/logo?
+    file={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/organizations/{{id}}/logo
+
+###
+DELETE https://api.trello.com/1/organizations/{{id}}/members/{{idMember}}/all
+
+###
+DELETE https://api.trello.com/1/organizations/{{id}}/prefs/associatedDomain
+
+###
+DELETE https://api.trello.com/1/organizations/{{id}}/prefs/orgInviteRestrict
+
+###
+DELETE https://api.trello.com/1/organizations/{{id}}/tags/{{idTag}}
+
+###
+GET https://api.trello.com/1/organizations/{{id}}/newBillableGuests/{{idBoard}}
+
+###
+GET https://api.trello.com/1/plugins/{{id}}/
+
+###
+PUT https://api.trello.com/1/plugins/{{id}}/
+
+###
+POST https://api.trello.com/1/plugins/{{idPlugin}}/listing
+Content-Type: application/json
+
+{
+  "description": "",
+  "locale": "",
+  "overview": "",
+  "name": ""
+}
+
+###
+GET https://api.trello.com/1/plugins/{{id}}/compliance/memberPrivacy
+
+###
+PUT https://api.trello.com/1/plugins/{{idPlugin}}/listings/{{idListing}}
+Content-Type: application/json
+
+{
+  "description": "",
+  "locale": "",
+  "overview": "",
+  "name": ""
+}
+
+###
+GET https://api.trello.com/1/search?
+    query={{$placeholder}}&
+    idBoards={{$placeholder}}&
+    idOrganizations={{$placeholder}}&
+    idCards={{$placeholder}}&
+    modelTypes={{$placeholder}}&
+    board_fields={{$placeholder}}&
+    boards_limit={{$placeholder}}&
+    board_organization={{$placeholder}}&
+    card_fields={{$placeholder}}&
+    cards_limit={{$placeholder}}&
+    cards_page={{$placeholder}}&
+    card_board={{$placeholder}}&
+    card_list={{$placeholder}}&
+    card_members={{$placeholder}}&
+    card_stickers={{$placeholder}}&
+    card_attachments={{$placeholder}}&
+    organization_fields={{$placeholder}}&
+    organizations_limit={{$placeholder}}&
+    member_fields={{$placeholder}}&
+    members_limit={{$placeholder}}&
+    partial={{$placeholder}}
+
+###
+GET https://api.trello.com/1/search/members/?
+    query={{$placeholder}}&
+    limit={{$placeholder}}&
+    idBoard={{$placeholder}}&
+    idOrganization={{$placeholder}}&
+    onlyOrgMembers={{$placeholder}}
+
+###
+GET https://api.trello.com/1/tokens/{{token}}?
+    fields={{$placeholder}}&
+    webhooks={{$placeholder}}
+
+###
+GET https://api.trello.com/1/tokens/{{token}}/member?
+    fields={{$placeholder}}
+
+###
+GET https://api.trello.com/1/tokens/{{token}}/webhooks
+
+###
+POST https://api.trello.com/1/tokens/{{token}}/webhooks?
+    description={{$placeholder}}&
+    callbackURL={{$placeholder}}&
+    idModel={{$placeholder}}
+
+###
+GET https://api.trello.com/1/tokens/{{token}}/webhooks/{{idWebhook}}
+
+###
+DELETE https://api.trello.com/1/tokens/{{token}}/webhooks/{{idWebhook}}
+
+###
+PUT https://api.trello.com/1/tokens/{{token}}/webhooks/{{idWebhook}}?
+    description={{$placeholder}}&
+    callbackURL={{$placeholder}}&
+    idModel={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/tokens/{{token}}/
+
+###
+POST https://api.trello.com/1/webhooks/?
+    description={{$placeholder}}&
+    callbackURL={{$placeholder}}&
+    idModel={{$placeholder}}&
+    active={{$placeholder}}
+
+###
+GET https://api.trello.com/1/webhooks/{{id}}
+
+###
+PUT https://api.trello.com/1/webhooks/{{id}}?
+    description={{$placeholder}}&
+    callbackURL={{$placeholder}}&
+    idModel={{$placeholder}}&
+    active={{$placeholder}}
+
+###
+DELETE https://api.trello.com/1/webhooks/{{id}}
+
+###
+GET https://api.trello.com/1/webhooks/{{id}}/{{field}}
