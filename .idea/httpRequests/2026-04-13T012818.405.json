@@ -1,0 +1,5 @@
+{
+  "success": false,
+  "status": 405,
+  "message": "HTTP_METHOD_NOT_ALLOWED"
+}

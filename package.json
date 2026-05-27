@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/lazKorsan/universal-test-framework#readme",
   "devDependencies": {
-    "cypress": "^15.8.2"
+    "cypress": "^15.8.2",
+    "jest": "^30.3.0",
+    "puppeteer": "^24.40.0"
   }
 }

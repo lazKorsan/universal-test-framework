@@ -1,5 +1,5 @@
 // ClickUtils.java
-package utilities;
+package utils;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -19,6 +19,11 @@ import java.util.Arrays;
  * Hem manuel testlerde hem de otomasyon framework'lerinde kullanılabilir
  */
 public class ClickUtils {
+
+    // click.click(By.xpath("//button[@class=\"btn btn-primary btn-block mt-20\"]"));
+    // ayrıca sınıf seviyesinde
+     //  //  ClickUtils click = new ClickUtils(drivers.DriverManager.getDriver());
+
 
     private final WebDriver driver;
     private Logger logger;
@@ -153,6 +158,9 @@ public class ClickUtils {
         logger.info("    ├─ Renk: " + color);
         logger.info("    └─ Timeout: " + timeout + "sn");
         logger.info("=".repeat(60));
+
+
+        // click(xpath,red,12,true,red)
 
         try {
             // Elementi bul ve tıklanabilir olana kadar bekle
@@ -298,7 +306,7 @@ public class ClickUtils {
     /**
      * Click metodunun overload versiyonu (varsayılan değerlerle)
      */
-    public boolean click(By by) {
+    public  boolean click(By by) {
         return click(by, highlightColor, 10, true, circleColor);
     }
 

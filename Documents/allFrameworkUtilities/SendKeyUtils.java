@@ -1,5 +1,5 @@
 // SendKeyUtils.java
-package utilities;
+package utils;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -19,6 +19,11 @@ import java.time.format.DateTimeFormatter;
  * Hem manuel testlerde hem de otomasyon framework'lerinde kullanılabilir
  */
 public class SendKeyUtils {
+
+    //  send.sendKeys(By.xpath(ExamplePage.mailBox),"ahmet.student@instulearn.com");
+    // ayrıca sınıf seviyesinde
+
+    //    SendKeyUtils send = new SendKeyUtils(driver);
 
     private final WebDriver driver;
     private Logger logger;

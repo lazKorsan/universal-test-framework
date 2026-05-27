@@ -121,4 +121,26 @@ public class delete04 {
 
         System.out.println("✓ Silme doğrulandı: Kurs " + courseId + " bulunamıyor (404)");
     }
+
+    @org.testng.annotations.Test
+    public void deleteMaxIdCourse() {
+        HooksAPI.setUpApi("admin");
+        API_Methods.pathParam("api/deleteCourse/4138");
+        API_Methods.sendRequest("DELETE", null);
+
+
+
+        // Assert: Success message
+
+
+
+
+
+
+
+
+
+
+
+    }
 }

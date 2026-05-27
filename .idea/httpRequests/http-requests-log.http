@@ -1,0 +1,61 @@
+GET https://qa.instulearn.com/api/courses
+x-api-key: 1234
+Content-Type: application/json
+Authorization: Bearer 15707|XCnyE8Ov4ZyvaMbZIbMfzOpRUbiyA1eUVPyUhXOB
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-13T012923.200.json
+
+###
+
+DELETE https://qa.instulearn.com/api/courses
+x-api-key: 1234
+Content-Type: application/json
+Authorization: Bearer 15707|XCnyE8Ov4ZyvaMbZIbMfzOpRUbiyA1eUVPyUhXOB
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-13T012818.405.json
+
+###
+
+DELETE https://qa.instulearn.com/api/courses
+x-api-key: 1234
+Content-Type: application/json
+Authorization: Bearer 15707|XCnyE8Ov4ZyvaMbZIbMfzOpRUbiyA1eUVPyUhXOB
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-13T012729.405.json
+
+###
+
+DELETE https://qa.instulearn.com/api/deleteCourse/4123
+x-api-key: 1234
+Content-Type: application/json
+Authorization: Bearer 15707|XCnyE8Ov4ZyvaMbZIbMfzOpRUbiyA1eUVPyUhXOB
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-13T012402.203.json
+
+###
+
+DELETE https://qa.instulearn.com/api/deleteCourse/4123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-04-13T011844.200.html
+
+###
+
