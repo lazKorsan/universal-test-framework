@@ -24,7 +24,7 @@ public class US005DeleteCourses {
         // "Successfully Deleted." oldugu dogrulanmali.
 
         HooksAPI.setUpApi("admin");
-        API_Methods.pathParam("api/deleteCourse/3973");
+        API_Methods.pathParam("api/deleteCourse/4137");
 
         API_Methods.sendRequest("DELETE", null);
 
@@ -49,7 +49,7 @@ public class US005DeleteCourses {
         // ve message bilgisinin de "There is not course for this id." oldugu, (id) icermeyen bir DELETE request gönderildiginde de dönen status code'in 203, response body'deki remark bilgisinin "failed" ve message bilgisinin de "No id" oldugu dogrulanmali.
 
         HooksAPI.setUpApi("admin");
-        API_Methods.pathParam("api/deleteCourse/3272");
+        API_Methods.pathParam("api/deleteCourse/4137");
         API_Methods.sendRequest("DELETE", null);
         API_Methods.statusCodeAssert(203);
         API_Methods.assertBody("remark", "failed");
@@ -82,7 +82,7 @@ public class US005DeleteCourses {
 
         HooksAPI.setUpApi("admin");
 
-        int courseId = 3272;
+        int courseId = 4137;
         API_Methods.pathParam("api/deleteCourse/" + courseId);
         API_Methods.sendRequest("DELETE", null);
 
@@ -169,7 +169,7 @@ public class US005DeleteCourses {
         // API uzerinden silinmek istenen course kaydinin silindigi, API uzerinden dogrulanmali.
 
         // 1. Silinecek ID
-        int courseId = 3390;
+        int courseId = 4137;
         System.out.println("Silinecek Course ID: " + courseId);
 
         // 2. DELETE isteği gönder
@@ -235,7 +235,7 @@ public class US005DeleteCourses {
     public void DeleteCourses_TC07_Minimal() {
         // Minimal versiyon - sadece temel işlemler
 
-        int courseId = 3395;
+        int courseId = 4137;
 
         // 1. DELETE
         HooksAPI.setUpApi("admin");
@@ -266,7 +266,7 @@ public class US005DeleteCourses {
 
     @Test
     public static void deleteCoursesTC08(){
-        int courseId = 3392;
+        int courseId = 4137;
         System.out.println("Test başladı. Course ID: " + courseId);
 
         // DELETE

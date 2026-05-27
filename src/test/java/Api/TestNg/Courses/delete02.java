@@ -2,12 +2,16 @@ package Api.TestNg.Courses;
 
 import Api.Utilities.API_Methods;
 import Api.Utilities.HooksAPI;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class delete02 {
+    private static List<Integer> CoursesAllIDs;
+    public Response response;
+
 
     @Test
     public void deleteMaxIdCourse() {
@@ -29,7 +33,9 @@ public class delete02 {
         //List<Integer> idList = getResponse.jsonPath().getList("id");
         // veya data.id, courses.id gibi yapıya göre
          //List<Integer> idList = getResponse.jsonPath().getList("data.id");
-         List<Integer> idList = getResponse.jsonPath().getList("courses.id");
+        JsonPath jsonPath = response.jsonPath();
+        CoursesAllIDs = jsonPath.getList("AddedCourseID.webinars.id", Integer.class);
+         List<Integer> idList = getResponse.jsonPath().getList("AddedCourseID.webinars.id");
 
         System.out.println("Tüm ID'ler: " + idList);
 

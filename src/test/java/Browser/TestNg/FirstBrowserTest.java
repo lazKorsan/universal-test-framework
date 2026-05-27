@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class FirstBrowserTest extends BaseTest {
 
     @Test
-    public void testGoogleSearch() {
+    public void testGoogleSearch() throws InterruptedException {
         // Driver'ı başlat
         Driver.getDriver().get("https://www.google.com");
 
@@ -23,6 +23,8 @@ public class FirstBrowserTest extends BaseTest {
         WebElement searchBox = Driver.getDriver().findElement(By.name("q"));
         searchBox.sendKeys("Selenium Test Automation");
         searchBox.submit();
+
+        Thread.sleep(20);
 
         // Bekle ve sonuçları kontrol et
         try {

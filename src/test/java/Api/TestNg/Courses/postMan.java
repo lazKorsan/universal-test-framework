@@ -58,7 +58,7 @@ public class postMan {
                 .header("x-api-key", "1234")
                 .header("Accept", "application/json")
                 .when()
-                .delete("/api/deleteCourse/" + maxId)
+                .delete("/api/deleteCourse/" + 4137)
                 .then()
                 .extract().response();
 

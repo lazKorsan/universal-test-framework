@@ -1,0 +1,101 @@
+Summary,Issue Type,Description,Priority
+US_001 - Bir kullanici olarak site ana sayfasina erisim saglayabilmek istiyorum.,Story,* App acildiginda ana sayfa erişilebilir olmalıdır.,Highest
+US_002 - Bir kullanici olarak site ici islemlerini kolaylikla yapabilmek icin ana sayfa altbarında kolay linklerin bulunmasını istiyorum,Story,"* Site alt barinda kolay linkler (Home,Category,Wishlist, Cart, Profile) goruntulenmeli.
+* Kolay linkler (Home,Category, Wishlist, Cart, Profile ) ilgili sayfaya yonlendirme yapmalidir.
+* Search Text Box goruntulenmeli ve arama yapilabilmeli.",Medium
+US_003 - Bir kullanici olarak sitede kayıt olmadan urunleri inceleyip urun secebilmek ve sepete ekleyebilmek istiyorum,Story,"* Anasayfada urunler ve urun özellikleri gorunur olmalı
+* Secilen urune ait beden/renk ve adet ozellikleri secilebilir olmalı
+* Urun detail sayfasında Add to Card butonu görünür ve aktif olmalı",High
+US_004 - Bir kullanici olarak anasayfada categories baslıgı altında kategorileri görüp istediğim kategoriden ürün secebilmek istiyorum,Story,* Anasayfada Categories baslıgı altında tüm kategoriler görünür olmalı.,High
+US_005 - Bir kullanici olarak anasayfada sitenin popular markalarını görebilmek istiyorum,Story,* Anasayfada Popular Brands baslıgı altında brandler görünür olmalı.,High
+US_006 - Kayıtlı bir kullanici olarak şifremi unuttugumda şifre değiştirme işlemi yapabilmek istiyorum,Story,"* SignIn sayfasında Forgot Password linki görünür ve aktif olmalı
+* Forgot password sayfasında gecerli e-mail ya da telefon numarası girilerek şifre resetleme işlemi yapılabilmelidir.
+* Get OTP butonu görünür ve aktif olmalıdır.
+* Back to sign in linki görünür ve aktif olmalıdır.",High
+US_007 - Bir kullanici olarak sitenin fonksiyonlarindan faydalanabilmek icin siteye kayit olabilmek istiyorum,Story,"* Ana sayfa alt barinda profile ikonu gorunur ve aktif olmali.
+* SignUp formunun altinda SignUp butonu gorunur ve aktif olmali.
+* SignUp formu icerisinde bos birakilamaz alanlar (Firstname, Email or Phone, Password) olmali.
+* Phone number ile register olabilmek icin en az 7 haneli numara girilmesi zorunlu olmali.
+* Email girisi icin girilen email  gecerli email kriterlerini saglamali
+* Password girisi icin girilen gecerli sifre (min 6 karakter) kriterlerini saglamali.
+* SignUp sayfasindan signIn sayfasina gecis yapilabilmeli.",Highest
+US_008 - Kayıtlı bir kullanici olarak siteye kaydoldugum (email/telefon ve password) bilgilerimle login olabilmek istiyorum.,Story,"* Ana sayfada profile linki görünür olmalı ve SıgnIn sayfasına yönlendirmeli
+* Login sayfasinda SignIn butonu gorunur ve aktif olmali.
+* Giris yapilan bilgilerin hatirlanmasi icin Remember me checkBox'i secilebilir olmali.
+* Login sayfasindan Forgot Password sayfasina gecis yapilabilmeli.
+* Login sayfasindan Register sayfasina gecis yapilabilmeli.
+* Login formuna gecersiz bilgiler girilip signIn butonuna tiklandiginda hata mesajlari goruntulenmeli.
+* Login formuna gecerli bilgiler girilip signIn butonuna tiklandiginda sisteme giris yapilabilmeli.",Highest
+US_009 - Bir kullanici olarak Kategoriler basligi altinda sitede bulunan tum kategorileri gorebilmek istiyorum.,Story,"* Ana sayfa navbarinda  Category ikonu gorunur ve aktif olmali.
+* Men,Women,Junior başlıkları görünür ve aktif olmalı
+* Filtreleme ikonları aktif olmalıdır.",High
+US_010 - Bir kullanici olarak alisveris yaptigim sitede guncel urunleri takip edebilecegim bir sayfanin olmasini istiyorum.,Story,"* Ana sayfa navBar da Most Popular menu basligi gorunur olmali.
+* See All ikonu gorunur ve aktif olmalı
+* Most Popular baslıgı altında guncel urunler listenmeli
+* Geri butona tıklandıgında anasayfaya geri dönülebilmeli",Medium
+US_0011 - Kayıtlı bir kullanıcı olarak sitede favori listesi oluşturabilmek istiyorum,Story,"* Anasayfa navbarda wishlist butonu gorunur ve aktif olmalıdır.
+* Secilen urunler wishlist /favorite butonundan wishlist listesine eklenebilmelidir.",Medium
+US_0012 - Bir kullanıcı olarak sayfada sectigim urun ile ilgili detaylı bilgilere ulasabilmek istiyorum,Story,"* Anasayfadan secilen urun sayfasına gecilebilmeli
+* Urun sayfasına gecildiginde Details,Videos,Review,Shipping&Return baslıkları görünür ve aktif olmalı
+* Details butonuna tıklandıgında Product Details baslıgı ve urune ait bilgiler goruntulenmeli
+* Videos butonuna tıklandıgında Product Videos baslıgı ve urune ait videolar goruntulenmeli
+* Review butonuna tıklandıgında Review baslıgı ve urune ait degerlendirmeler goruntulenmeli
+* Shipping&Return butonuna tıklandıgında Shipping&Return baslıgı ve urune ait kargo ve iade kosulları goruntulenmeli",Medium
+US_013 - Kayıtlı bir kullanici olarak ana sayfada Men menusune ait kategorileri ve urunleri gorebilmek istiyorum.,Story,"* Ana sayfa body bolumunde Men kategori penceresi ve alt kategorileri gorunur ve aktif olmalı
+* Men kategori sayfasındaki urunler uzerinde islemler (sepete ekleme, begenilenler listesine ekleme ve goruntuleme) yapilabilmeli.
+* Filtreleme ikonları gorunur ve aktif olmalı",High
+US_014 - Kayıtlı bir kullanici olarak ana sayfada Juniors menusune ait kategorileri ve urunleri gorebilmek istiyorum.,Story,"* Ana sayfa body bolumunde Juniors kategori penceresi ve alt kategorileri goruntulenmeli.
+* Juniors kategori sayfasındaki urunler uzerinde islemler (sepete ekleme, begenilenler listesine ekleme ve goruntuleme) yapilabilmeli.
+* Filtreleme ikonları gorunur ve aktif olmalı",Medium
+US_015 - Kayıtlı bir  kullanici olarak ana sayfada Women menusune ait kategorileri ve urunleri gorebilmek istiyorum.,Story,"* Ana sayfa body bolumunde Women kategori penceresi ve alt kategorileri  goruntulenmeli.
+* Women kategori sayfasındaki urunler uzerinde islemler (sepete ekleme, begenilenler listesine ekleme ve goruntuleme) yapilabilmeli.
+* Filtreleme ikonları gorunur ve aktif olmalı",Medium
+US_016 - Kayitli bir kullanici olarak sitedeki islemlerimi ve ayarlarimi kontrol etmek icin sitede bana özel bir dashboard sayfasinin olmasini istiyorum.,Story,"* Ana sayfada Profile ikonu gorunur ve aktif olmali.
+* Profile ikonuna tıklandıgında dashboard sayfasına gecilmeli
+* Dashboard sayfasinda kullanici icin My Account sayfasında  ozet bilgiler (Total Orders,Total Completed,Total Returnd,Wallet Balance) gorunur olmali.
+* My Account sayfasinda kullanicinin siparis gecmisi goruntulenmeli.",Medium
+US_017 - Kayıtlı bir kullanıcı olarak sitede adres bilgilerimi yönetebilecegim bir sayfa olmasını istiyorum,Story,"* Dashboard sideBar'da Address menu basligi gorunur ve aktif olmali.
+* Adress sayfasında kayıtlı adresler gorunur,duzenlenebilir,silinebilir olmalı
+* Add New Address butonu gorunur ve aktif olmalı
+* Yeni adres kaydı eklenebilmeli",High
+US_018 - Kayitli bir kullanici olarak Dashboard panelimde alisveris gecmisimi goruntuleyebilecegim bir sayfanin olmasini istiyorum,Story,"* Dashboard sideBar'da Order History menu basligi gorunur ve aktif olmali.
+* Order History sayfasinda alisveris gecmisi goruntuleme ikonu aktif olmali.
+* Order History listesinden siparis faturasina ulasilabilmeli.
+* Order History listesinden sipariş iptal edilebilmeli",High
+US_019 - Kayıtlı bir kullanıcı olarak sitede odemeyi tamamlamadan önce adres bilgilerimi secip yonetebilecegim bir sayfa olmasını istiyorum,Story,"* Shipping Information sayfasında Delivery ,Pick Up butonları gorunur ve aktif olmalı
+* Delivery butonu tıklandıgında Shipping adres bilgileri goruntulenmeli,duzenlenebilmeli ,yeni adres eklenebilmeli
+* Order Summary baslıgı altında siparis ozeti goruntulenmeli
+* Save & Pay butonu gorunur ve aktif olmalı",High
+US_020 - Kayıtlı bir kullanıcı olarak dashboard sayfamda sifre degistirme islemlerimi gerceklestirmek istiyorum,Story,"* Dashboard sayfasında Change Password linki gorunur ve aktif olmalı
+* Change Password sayfasında Old password,New password,Confirm password text boxları gorunur ve aktif olmalı
+* Save Changes butonu gorunur ve aktif olmalı
+* Yapılan degisiklikler basarıyla kaydedilmeli",High
+US_021 - Kayıtlı bir kullanıcı olarak sitede kendi profil bilgilerimi duzenleyebilmek istiyorum,Story,"* Dashboard sayfasında Edit Profile linki gorunur ve aktif olmalı
+* Tıklandıgında Edit Profile sayfasında Full Name,Email,Phone bilgileri duzenlenebilmeli
+* Save Changes butonu gorunur ve aktif olmalı
+* Yapılan degisiklikler basarıyla kaydedilmeli",High
+US_022 - Kayıtlı bir kullanıcı olarak sistemden guvenli bir sekilde cıkıs yapabilmek istiyorum,Story,"* Anasayfada profil ikonu gorunur olmalı
+* Profil ikonuna tıklandıgında dashboard sidebar da Logout linki gorunur ve aktif olmalı
+* Tıklandıgında basarılı sekilde siteden cıkıs yapılabilmeli",Highest
+US_023 - Bir kullanıcı olarak kayıt olmamis kisilerin begendiği urunlerle favori listesi olusturmak icin kayıt sayfasına yonlenmesini istiyorum,Story,"* Site içerisindeki ürünler uzerinde favori ikonu görünür ve aktif olmalı
+* Urun kaydetmek icin Sıgn in sayfasına gecis yapıp Sign up /Sign in olunmali",Medium
+US_24 - Kayitli bir kullanici olarak kontrollerini sagladigim siparislerimin odemesini gerceklestirebilecegim bir odeme sayfasi olmasini istiyorum.,Story,"* Payment Information sayfasında Select Payment Method menu baslıgı altında odeme yontemi secilmeli
+* Stripe Method'da card bilgi formu doldurulup odeme yapılabilmeli
+* Confirm order butonu gorunur ve aktif olmalı
+* Siparisin tamamlandıgı mesajı goruntulenmeli
+* Siparis detayları ve fatura goruntulenebilmeli
+* Alısverise devam edilebilmeli",Highest
+US_025 - Kayıtlı bir kullanici olarak iade etmek istedigim siparisler ile ilgili bir sayfa olmasını ve urun iade islemlerimi yonetebilmeyi istiyorum,Story,"* Dashboard Order History sayfasında secilen siparis (Delivered olan ) sayfasında Return Request butonu gorunur ve aktif olmalı
+* Request Return sayfasında istenen urun secilebilmeli
+* İade nedeni ,not ve attachment eklenebilmeli
+* Request Return butonu gorunur ve aktif olmalı
+* Return Orders sayfasında iade islemi baslatıldıgı goruntulenmeli",Medium
+US_026 - Kayıtlı bir kullanıcı olarak sitede favori urunlerim sayfası olmasını ve bu sayfayı yonetebilmeyi istiyorum,Story,"* Ürünlerin uzerinde favori ikonu gorunur ve aktif olmalı,istenen urun favori listesine eklenmeli
+* Anasayfada Wishlist ikonu gorunur ve aktif olmalı
+* Wishlist sayfasında eklenen urunler goruntulenmeli
+* Istenen urun wishlist sayfasından kaldırılabilmeli",High
+US_027 - Kayıtlı bir kullanıcı olarak sitede bir sepetim olmasını ve bu sepet işlemlerimi yönetebilmeyi istiyorum,Story,"* Anasayfada sepet ikonu gorunur ve aktif olmalı
+* Shopping Cart sayfasında sepete eklenmiş urunler goruntulenmeli,silinebilmeli
+* Subtotal bilgisi gorunur olmalı
+* Prooceed to Checkout butonu gorunur ve aktif olmalı odeme sayfasına yonlendirmeli
+* Sepette hiç urun kalmamıs ise alısverise geri donulmeli (Go to Shopping buton gorunur ve aktif olmalı)",Highest
